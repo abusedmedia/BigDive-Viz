@@ -5,8 +5,8 @@
                     .sortKeys(d3.ascending)
                     .entries(data)
 
-    var w = document.body.clientWidth
-    var h = 150
+    var w = 500 // document.body.clientWidth
+    var h = 100
     var pw = w / editions.length
 
     var svg = d3.select('#by_divers').attr('viewBox', `0 0 ${w} ${h}`)
@@ -14,7 +14,7 @@
     var pack = d3.pack()
                     .size([pw, h])
                     .padding(1)
-                    .radius(() => 10)
+                    .radius(() => 5)
 
     editions.forEach(d => {
       var str = d3.hierarchy({root: 'r', children: d.values}).sum(() => 5)
@@ -33,23 +33,17 @@
     col.append('line')
         .attr('y1', 0)
         .attr('y2', h)
-        .style('stroke', '#ccc')
+        .style('stroke', '#fff')
 
     col.append('g')
             .selectAll('circle')
             .data(d => d.pack.children)
             .enter()
             .append('circle')
-            .attr('r', 0)
+            .attr('r', d => d.r)
             .attr('cx', d => d.x)
             .attr('cy', d => d.y)
-            .style('fill', d => cols(d.data.NATION))
-            .transition()
-            .duration(1000)
-            .delay((d, i, p) => {
-              return i * 100
-            })
-            .attr('r', d => d.r)
+            // .style('fill', d => cols(d.data.NATION))
   }
 
   window.APP.by_divers = init

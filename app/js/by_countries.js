@@ -12,8 +12,9 @@
 
     console.log(editions)
 
-    var w = document.body.clientWidth
-    var h = 75
+    var w = 500 // document.body.clientWidth
+    var h = 100
+    var pad = 5
     var pw = w / editions.length
 
     var cols = d3.scaleOrdinal(d3.schemeCategory20)
@@ -24,7 +25,12 @@
 
     var mapH = d3.scaleLinear()
                 .domain([0, max])
-                .range([0, h])
+                .range([0, h - pad * 2])
+
+    var maxEl = d3.max(editions, d => {
+      return d.values.length
+    })
+    var fx = (pw - pad * 2) / maxEl
 
     var svg = d3.select('#by_countries').attr('viewBox', `0 0 ${w} ${h}`)
 
@@ -38,17 +44,17 @@
     col.append('line')
         .attr('y1', 0)
         .attr('y2', h)
-        .style('stroke', '#ccc')
+        .style('stroke', '#fff')
 
     col.selectAll('rect')
         .data(d => d.values)
         .enter()
         .append('rect')
-        .attr('width', 5)
+        .attr('width', fx - 1)
         .attr('height', d => mapH(d.values.length))
-        .attr('x', (d, i) => i * 6)
-        .attr('y', d => h - mapH(d.values.length))
-        .style('fill', d => cols(d.key))
+        .attr('x', (d, i) => pad + i * fx)
+        .attr('y', d => h - mapH(d.values.length) - pad)
+        // .style('fill', d => cols(d.key))
   }
 
   window.APP.by_countries = init

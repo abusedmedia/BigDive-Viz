@@ -18,20 +18,38 @@
 
     var cols = d3.scaleOrdinal(d3.schemeCategory20)
 
-    svg.selectAll('circle')
+    var circles = svg.selectAll('circle')
         .data(packed.children)
         .enter()
         .append('circle')
-        .attr('r', 0)
+        .attr('r', d => d.r)
         .attr('cx', d => d.x)
         .attr('cy', d => d.y)
-        .style('fill', d => cols(d.data.NATION))
-        .transition()
-        .duration(1000)
-        .delay((d, i) => {
-          return i * 30
+        // .style('fill', d => cols(d.data.NATION))
+        .on('mouseenter', (d) => {
+          this.select(d.data.NATION)
         })
-        .attr('r', d => d.r)
+        .on('mouseleave', (d) => {
+          this.deselect()
+        })
+
+    this.select = function (id) {
+      console.log(id)
+      circles.each(function (d) {
+        var c = '#fff'
+        if (d.data.NATION === id) {
+          c = 'black'// cols(id)
+        }
+        d3.select(this)
+            .style('fill', c)
+      })
+    }
+
+    this.deselect = function () {
+      circles.style('fill', null)
+    }
+
+    return this
   }
 
   window.APP.all_divers = init

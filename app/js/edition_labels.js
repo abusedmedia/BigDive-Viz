@@ -10,7 +10,7 @@
         .data(editions)
         .enter()
         .append('div')
-        .text(d => d.key)
+        .text(d => `BigDive #${d.key}`)
   }
 
   window.APP.edition_labels = init
