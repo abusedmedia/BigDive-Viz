@@ -1,7 +1,7 @@
 ;(function (d3) {
   function init (data) {
     var editions = d3.nest()
-                    .key(d => d.EDITION)
+                    .key(d => d.edition)
                     .sortKeys(d3.ascending)
                     .entries(data)
 

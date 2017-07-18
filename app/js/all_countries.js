@@ -1,7 +1,7 @@
 ;(function (d3) {
   function init (data) {
     var countries = d3.nest()
-                    .key(d => d.NATION)
+                    .key(d => d.country)
                     .sortKeys(d3.ascending)
                     .entries(data)
 

@@ -3,14 +3,12 @@
     var editions = d3.nest()
                     .key(d => d.edition)
                     .sortKeys(d3.ascending)
-                    .key(d => d.country)
+                    .key(d => d.gender)
                     .entries(data)
 
     editions.forEach(d => {
       d.values.sort((a, b) => d3.descending(a.values.length, b.values.length))
     })
-
-    console.log(editions)
 
     var w = 500 // document.body.clientWidth
     var h = 100
@@ -32,7 +30,7 @@
     })
     var fx = (pw - pad * 2) / maxEl
 
-    var svg = d3.select('#by_countries').attr('viewBox', `0 0 ${w} ${h}`)
+    var svg = d3.select('#by_gender').attr('viewBox', `0 0 ${w} ${h}`)
 
     var col = svg.append('g')
             .selectAll('g')
@@ -57,5 +55,5 @@
         // .style('fill', d => cols(d.key))
   }
 
-  window.APP.by_countries = init
+  window.APP.by_gender = init
 })(window.d3)

@@ -4,8 +4,9 @@ html, body{
     padding: 0;
     margin:0;
     font-family: sans-serif;
-    background-color: purple;
+    background-color: #CDC8C5;
     color: white;
+	font-family: 'Oswald', sans-serif;
 }
 svg{
     width: 100%;
@@ -13,6 +14,16 @@ svg{
 
 svg circle, svg rect{
 	fill: white;
+}
+
+h1, h3{
+	font-weight: 600;
+	color: red;
+	text-align: center;
+}
+
+h1{
+	font-size: 3rem;
 }
 
 #header{
