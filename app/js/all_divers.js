@@ -12,14 +12,18 @@
                     .padding(1)
                     // .radius(() => Math.random() + 10)
 
+    var palette = ['#DFC5B4', '#C8AB95', '#668597', '#416783', '#819593', '#767570', '#C54443', '#A73835', '#9B4321', '#4F332B', '#754F3C', '#F1A353', '#F28C53', '#F7C195', '#F6B692']
+    palette = d3.shuffle(palette)
+
     var states = ['', 'country', 'gender', 'edition']
     var indexState = 0
 
-    var countryColor = d3.scaleOrdinal(d3.schemeCategory20)
-    var genderColor = d3.scaleOrdinal().domain(['M', 'F']).range(['blue', 'pink'])
-    var editionColor = d3.scaleOrdinal(d3.schemeCategory20)
+    var countryColor = d3.scaleOrdinal(palette)
+    var genderColor = d3.scaleOrdinal().domain(['M', 'F']).range(['#668597', '#C54443'])
+    var editionColor = d3.scaleOrdinal(palette)
 
-    function draw (key) {
+    function draw () {
+      var key = states[indexState]
       var str = d3.hierarchy({root: 'r', children: data})
                               .sort((a, b) => d3.ascending(a.data[key], b.data[key]))
                               .sum(d => d.age)
@@ -69,9 +73,10 @@
     draw()
 
     svg.on('click', function () {
-      draw(states[indexState])
+      console.log('click', indexState)
       indexState++
       if (indexState >= states.length) indexState = 0
+      draw()
     })
 
     this.select = function (id) {
