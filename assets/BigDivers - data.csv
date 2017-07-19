@@ -11,7 +11,7 @@ id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
 10,Luca,Tabone,M,MT,null,5,data analist,Frontend Developer,RS2 Software plc
 11,Valentina,Tortolini,F,IT,Firenze,5,researcher,Post Doctoral Fellow,IMT Lucca Institute for Advanced Studies
 12,Josè Alberto Garcìa,Guijarro,M,ES,Malaga,4,UX Specialist,ITRS,Universidad Internacional de La Rioja
-13,Adam,Klimont,M,UK,Cambridge,4,PhD Student,PHD Student,University of Cambridge
+13,Adam,Klimont,M,GB,Cambridge,4,PhD Student,PHD Student,University of Cambridge
 14,Lorenzo,Malanga,M,IT,Torino,4,Student & startup cofounder,Co-founder,mercurios.io
 15,Andrea,Marchini,M,IT,Milano,4,Analytical Consultant,Senior Data Scientist,Pirelli
 16,Massimo,Menichinelli,M,ES,Madrid,4,Doctoral Student / Researcher / Designer / Facilitator,Project Manager,Fab Academy
