@@ -7,24 +7,23 @@
 
     var w = 500 // document.body.clientWidth
     var h = 100
+    var padX = 24
+    var padY = 12
     var pw = w / editions.length
-    var pad = 10
+
+    var max = d3.max(editions, d => {
+      return d.values.length
+    })
+
+    var mapH = d3.scaleLinear()
+                .domain([0, max])
+                .range([0, h - padY * 2])
+
+    var fx = (pw - padX * 2)
 
     var svg = d3.select('#by_divers').attr('viewBox', `0 0 ${w} ${h}`)
 
-    var pack = d3.pack()
-                    .size([pw - pad * 2, h - pad * 2])
-                    .padding(1)
-                    // .radius(() => 5)
-
-    editions.forEach(d => {
-      var str = d3.hierarchy({root: 'r', children: d.values}).sum(() => 5)
-                        .sum(d => d.age)
-
-      d.pack = pack(str)
-    })
-
-    var mapCol = d3.scaleOrdinal(window.APP.countryPalette)
+    var mapCol = d3.scaleOrdinal().domain(['M', 'F']).range(window.APP.genderPalette)
 
     var col = svg.append('g')
             .selectAll('g')
@@ -33,20 +32,25 @@
             .append('g')
             .attr('transform', (d, i) => `translate(${pw * i},0)`)
 
-    col.append('line')
+    col.filter((d, i) => i > 0)
+        .append('line')
         .attr('y1', 0)
         .attr('y2', h)
         .style('stroke', '#fff')
 
-    col.append('g')
-            .selectAll('circle')
-            .data(d => d.pack.children)
-            .enter()
-            .append('circle')
-            .attr('r', d => d.r)
-            .attr('cx', d => d.x + pad)
-            .attr('cy', d => d.y + pad)
-            .style('fill', d => mapCol(d.data.country))
+    col.append('rect')
+        .attr('width', fx - 1)
+        .attr('height', d => mapH(d.values.length))
+        .attr('x', padX)
+        .attr('y', d => h - mapH(d.values.length))
+        .style('fill', d => window.APP.editionPalette[d.key])
+
+    col.append('text')
+        .text(d => d.values.length)
+        .attr('y', d => h - mapH(d.values.length) + 12)
+        .attr('x', padX + 1)
+        .style('font-size', 12)
+        .style('fill', '#fff')
   }
 
   window.APP.by_divers = init

@@ -12,7 +12,9 @@
 
     var w = 500 // document.body.clientWidth
     var h = 100
-    var pad = 20
+    var padX = 24
+    var padY = 12
+
     var pw = w / editions.length
 
     var max = d3.max(editions, d => {
@@ -21,12 +23,12 @@
 
     var mapH = d3.scaleLinear()
                 .domain([0, max])
-                .range([0, h - pad * 2])
+                .range([0, h - padY * 2])
 
     var maxEl = d3.max(editions, d => {
       return d.values.length
     })
-    var fx = (pw - pad * 2) / maxEl
+    var fx = (pw - padX * 2) / maxEl
 
     var svg = d3.select('#by_gender').attr('viewBox', `0 0 ${w} ${h}`)
 
@@ -39,7 +41,8 @@
             .append('g')
             .attr('transform', (d, i) => `translate(${pw * i},0)`)
 
-    col.append('line')
+    col.filter((d, i) => i > 0)
+        .append('line')
         .attr('y1', 0)
         .attr('y2', h)
         .style('stroke', '#fff')
@@ -50,9 +53,19 @@
         .append('rect')
         .attr('width', fx - 1)
         .attr('height', d => mapH(d.values.length))
-        .attr('x', (d, i) => pad + i * fx)
-        .attr('y', d => h - mapH(d.values.length) - pad)
-        .style('fill', d => mapCol(d.key))
+        .attr('x', (d, i) => padX + i * fx)
+        .attr('y', d => h - mapH(d.values.length))
+        .style('fill', d => window.APP.genderPalette[d.key])
+
+    col.selectAll('text')
+        .data(d => d.values)
+        .enter()
+        .append('text')
+        .text(d => d.values.length)
+        .attr('y', d => h - mapH(d.values.length) - 2)
+        .attr('x', (d, i) => padX + i * fx + 1)
+        .style('font-size', 7)
+        .style('fill', '#000')
   }
 
   window.APP.by_gender = init

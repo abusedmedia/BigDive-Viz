@@ -14,7 +14,7 @@
 
     var w = 500 // document.body.clientWidth
     var h = 100
-    var pad = 10
+    var pad = 8
     var pw = w / editions.length
 
     var max = d3.max(editions, d => {
@@ -41,12 +41,16 @@
             .append('g')
             .attr('transform', (d, i) => `translate(${pw * i},0)`)
 
-    col.append('line')
+    col.filter((d, i) => i > 0)
+        .append('line')
         .attr('y1', 0)
         .attr('y2', h)
         .style('stroke', '#fff')
 
-    col.selectAll('rect')
+    var gr = col.append('g')
+        .attr('transform', d => `translate(${((maxEl - d.values.length) * (fx)) / 2},0)`)
+
+    gr.selectAll('rect')
         .data(d => d.values)
         .enter()
         .append('rect')
@@ -56,7 +60,7 @@
         .attr('y', d => h - mapH(d.values.length) - pad - 2)
         .style('fill', d => mapCol(d.key))
 
-    col.selectAll('image')
+    gr.selectAll('image')
         .data(d => d.values)
         .enter()
         .append('image')
@@ -64,7 +68,17 @@
         .attr('x', (d, i) => pad + i * fx)
         .attr('width', fx - 1)
         .attr('height', fx - 1)
-        .attr('y', d => h - pad)
+        .attr('y', d => h - fx)
+
+    gr.selectAll('text')
+        .data(d => d.values)
+        .enter()
+        .append('text')
+        .text(d => d.values.length)
+        .attr('y', d => h - mapH(d.values.length) - pad - 4)
+        .attr('x', (d, i) => pad + i * fx)
+        .style('font-size', 7)
+        .style('fill', '#000')
   }
 
   window.APP.by_countries = init
