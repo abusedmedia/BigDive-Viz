@@ -1,0 +1,90 @@
+id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
+1,Giuseppe Federico,Gullo,M,IT,Torino,5,Mobile application engineer,CEO & Founder,Avada Technologies
+2,Soren,Heitmann,F,TR,Istanbul,5,Economist,Applied research to scale digital financial services for financial inclusion,IFC - International Finance Corporation
+3,Teresa,Kubacka,F,CH,Zurich Area,5,PhD student / Research Assistant,Dr. sc. ETH Zurich,Die Mobiliar
+4,Giacomo,Leonzi,M,IT,Torino,5,Free Lance Maker,Internet of Things/ Physical Computing/ Prototyping,Kiwifarm
+5,Martin,Muller,M,CH,Zurich,5,Scientific Assistant,PHD Student,EPFL
+6,Adriano,Pagano,M,CH,Fribourg,5,Student,Junior Data Scientist,sqooba
+7,Davide,Passaretti,M,IT,Scauri,5,PhD Student in Statistics,"PhD Student in Statistics, Data Scientist"," University of Cassino, Universiteit Leiden "
+8,Riccardo,Rinaldi,M,IT,Torino,5,Data Scientist Junior,PhD,aizoOn Technology Consulting
+9,Massimo,Santi,M,IT,Bologna,5,Consultant on environmental services,Ingegnere specializzato nei Servizi di Igiene Urbana,Università di Bologna
+10,Luca,Tabone,M,MT,null,5,data analist,Frontend Developer,RS2 Software plc
+11,Valentina,Tortolini,F,IT,Firenze,5,researcher,Post Doctoral Fellow,IMT Lucca Institute for Advanced Studies
+12,Josè Alberto Garcìa,Guijarro,M,ES,Malaga,4,UX Specialist,ITRS,Universidad Internacional de La Rioja
+13,Adam,Klimont,M,UK,Cambridge,4,PhD Student,PHD Student,University of Cambridge
+14,Lorenzo,Malanga,M,IT,Torino,4,Student & startup cofounder,Co-founder,mercurios.io
+15,Andrea,Marchini,M,IT,Milano,4,Analytical Consultant,Senior Data Scientist,Pirelli
+16,Massimo,Menichinelli,M,ES,Madrid,4,Doctoral Student / Researcher / Designer / Facilitator,Project Manager,Fab Academy
+17,Elena,Osti,F,IT,Vicenza,4,Web analyst,Web Analyst and Adwords Certificated,Empty
+18,Gianni Rosa,Gallina,M,IT,Torino,4,Senior System Engineer,Senior Software Engineer,deltatre
+19,Gianluca,Moretto,M,IT,null,4,null,Executive Manager,MORETTO ASSOCIATES
+20,Gino,Almondo,M,SE,Stoccolma,5,Jobseeker,"Physicist, Data Scientist",MedMod IT Solutions AB
+21,Antonino,Barbera,M,CH,Lausanne,5,Student-Avada founder-ICT support engineer,COO & Founder,Envolvi
+22,Lorenzo,Argante,M,IT,Torino,5,Postdoctoral researcher,Researcher,ISI Foundation
+23,Andrea,Beccaris,M,IT,Torino,5,Software Engineer,Software Engineer,TOP-IX Consortium
+24,Buri,Sinja,M,SN,Dakar,5,Monitoring & Evaluation Consultant,(Data) Operations Analyst at IFC,International Finance Corporation
+25,Andrea,Flori,M,IT,Siena,5,PhD Student,Post Doctoral Fellow,IMT School for Advanced Studies Lucca
+26,Giuseppe,Di Bernardo,M,DE,Monaco,5,Postdoctoral Fellow at Max Planck Institute for Astrophysics,Data Science at Max Planck Computing and Data Facility,Chalmers University of Technology
+27,Matteo,Giaretti,M,IT,Torino,5,reliability engineer,Data Scientist,Intesa Sanpaolo
+28,Luca,Bonavita,M,IT,Milano,1,Engineer,Data Visualization Developer - Software Engineer,Free Lancer
+29,Ciara,Byrne,F,NL,Amsterdam,1,Technology Journalist,Lapsed developer/ tech journalist/ product builder,MadeVivid
+30,Davide,D'Aprile,M,AE,Dubai,1,Entrepreneur,"Digital Innovator & Strategist C-level/ PhD Scientist | Blockchain/ Big Data & AI Expert |Smart City & Open Data Advisor""",Smart Dubai Gov
+31,Niccolò,Favari,M,IT,Pavia,1,Developer,Game Developer,Independent
+32,Fariba,Karimi,F,DE,Mannheim,1,PhD student,Postdoctoral Fellow,GESIS
+33,Irene,Laino,F,IT,Torino,1,Communication Specialist,Audience & Data Manager,Xaxis
+34,Claudio,Martines,M,IT,Taranto,1,Electronic Engineer,Number (R)Evolutionary Visionary and expert in Security and Quality Management System,Holsys s.r.l.
+35,Antonella,Mauri,F,IT,Milano,1,SW TECHNICAL LEADER,Entrepreneur in Software Design & Development,Yottacle srl
+36,Piotr,Migdal,M,PL,Varsavia,1,PhD student,Data Scientist |  Quantum Physics PhD,deepsense.io
+37,René,Pfitzner,M,CH,Zurich Area,1,Lead Data Scientist bei Neue Zürcher Zeitung,null,Neue Zürcher Zeitung
+38,Andrea,Pigato,M,UK,Londra,1,student developer,Contract Full-stack Web Developer,Fruktarbo ltd.
+39,Roberto,Piuca,M,IT,Reggio Emilia,1,null,Head of Business Development at Way Srl,WAY Srl
+40,Francesco,Portoso,M,LU,Lussemburgo,1,freelancer,Technical Account Manager at Amazon Digital Music,Amazon
+41,Edoardo,Tenani,M,IT,Londra,1,Web developer,Senior Full Stack Web Developer,Vitsoe
+42,Paolo,Viotti,M,FR,Alpes-Cote D'Azur,1,Developer Junior ICT Architect Consultant,PhD student,EURECOM
+43,Marcello,Pietri,M,IT,Modena,1,PhD student research,ICT Professor & ICT Manager,Università di Modena
+44,Adiya,Abisheva,F,CH,Zurich,2,PhD Student,null,null
+45,Alex,Comunian,M,IT,Torino,2,/,Full Stack IT Engineer,TOP-IX Consortium
+46,Francesco,Corazza,M,IT,Milano,2,Startupper,Product Manager,Empatica
+47,Andrea,Gaiardo,M,IT,Torino,2,Phd & resercher,Innovation Designer,StarBoost Srl
+48,Giuseppe,Futia,M,IT,Torino,2,Communication Manager at Nexa Center for Internet & Society - Politecnico di Torino,PhD Candidate,Nexa Center for Internet & Society
+49,David Martin,Borregon,M,ES,Barcellona,2,Student,Data Scientist,Typeform.com
+50,Piero,Molino,M,US,San Francisco Bay Area,2,PhD. Student and Startupper,Research Scientist,Uber
+51,Andrea,Peretti,M,IT,Torino,2,null,Analista programmatore VR e AR,Illogic
+52,Maximilien,Rzepka,M,UK,Londra,2,Developer,Software Developer,pi ltd
+53,Marco,Sors,M,IT,Venezia,2,Frontend developer,Freelance frontend & dataviz developer,Free Lancer
+54,Erika,Vicaretti,F,IT,Torino,2,designer,Graphic & Information Designer,Bianco Tangerine
+55,Enrico,Zimuel,M,IT,Torino,2,Software Engineer,Senior Software Engineer,Rogue Wave Software
+56,Claudio,Bellei,M,UK,Londra,3,Postdoc,Data Scientist,Elsevier
+57,Carlo,Bergoglio,M,IT,Torino,3,IT Engineer / DB Administrator / Java Web Developer,IT Engineer - Big Data Specialist,GET Italia
+58,Luca,Ferreri,M,IT,Torino,3,PhD student,Data Scientist,aizoOn
+59,Matteo,Chinazzi,M,US,Boston,3,PhD Student,Associate Research Scientist,Northeastern University
+60,Meltem,Gürel,M,UK,Cambridge,3,IT Director at NGO The Comrads Brussels Belgium,PHD Student,Cancer Research UK Cambridge Institute
+61,Gordon,Hatusupy,M,CA,Ottawa,3,Information Designer,Senior Product Designer (data visualization / ux),Shopify
+62,Bryan,Iotti,M,IT,Torino,3,Intern at the Department of Veterinary Sciences University of Turin,PHD Student,University of Turin
+63,Marcin,Kaszynski,M,PL,Varsavia,3,Software Engineer Team Lead Consultant,Software Engineer,Stealth Robotics Startup
+64,Vito,Mandorino,M,FR,Parigi,3,Postdoc in mathematics,Chief Scientist,Lingua Custodia
+65,Vahan,Nanumyan,F,CH,Zurich Area,3,Student,PhD Candidate,ETH Zurich
+66,Lorenzo,Napolitano,M,IT,Pisa,3,Phd Student,Student,Istituto Superiore Sant'Anna
+67,Orion,Penner,M,CH,Geneva Area,3,Assistant Professor,Postdoctoral Researcher,EPFL
+68,Pierre,Prinetti,M,DE,Berlino,3,Data specialist Regione Valle d'Aosta Wannabe startupper,Software Developer,Campanda
+69,Carlo,Recchia,M,IT,Torino,3,Information Security Specialist,Information Security Specialist,Enel
+70,Simone,Basso,M,IT,Torino,4,researcher,Research Fellow,Nexa Center for Internet & Society
+71,Chiara,Barbagianni,F,UK,null,4,Part-time lecturer researcher language services specialist,Computational Linguist Language Consultant Lecturer and Researcher,Vodafone
+72,Roberto,Catini,M,IT,Lucca,4,PhD Candidate,Data Scientist,IMT Lucca Institute for Advanced Studies
+73,Andrea,Corradi,M,IT,Milano,4,Electronic engineering,Interaction and information designer,null
+74,Hai,Dao Thanh,F,VN,Leeds,4,PhD student,Optical Network Engineer,University of Leeds
+75,Isabella,David,F,IT,Torino,4,DATA ANALYST-ECONOMETRICIAN,Senior Data Analyst,AXA
+76,Enrico,Deusebio,M,IT,Milano,4,Post-doctoral Researcher (University of Cambridge),Data Scientist,CGnal Spa
+77,Alfredo,Favenza,M,IT,Torino,4,Researcher,R&D Project Manager,Istituto Superiore Mario Boella (ISMB)
+78,Enrico,Ubaldi,M,IT,Turin,5,Post-Doc,Statistician and data scientist,null
+79,Luca,Ruzzola,M,IT,Torino,5,Physics Student,Data Scientist,AgileLab
+80,Maurizio,Mattioli,M,IT,Milan,5,IT Solution Architect,null,null
+81,Tobias,Sholl,M,IT,Torino,4,Project Manager,Manager Data Analysis,Deloitte
+82,Giorgio Ettore,Melon,M,IT,Torino,4,risk/actuarial consultant,Data Analysis,Cerved Group Spa
+83,Lionel,Johnnes,M,US,New York,4,Unemployed before starting graduate school (previously Marketing Director),Senior Product & Delivery Analyst,McKinsey & Company
+84,Anna,Roginska,F,CA,Woodbridge,3,Student,Web & Marketing Specialist,Sparton Rugged Electronics
+85,Rocco,Corriero,M,IT,Turin,2,Student,null,null
+86,Marcelo Serrano,Zanetti,M,CH,Zurich,1,PhD Student,null,null
+87,Jonas,Liechti,M,CH,Zurich,1,PhD Candidate,null,null
+88,Kewin,Ewe,M,US,San Francisco,1,Software Developer,Builder of Stuff,IDEO
+89,Emanuele,Balboni,M,IT,Pino Torinese,1,scientific collaborator at INFINI.TO Turin Planetarium,Collaboratore Scientifico,Associazione Apriti Cielo
