@@ -39,7 +39,7 @@ module.exports = function (grunt, options) {
         {
           expand: true,
           cwd: options.folders.app,
-          src: path.join('assets', '*'),
+          src: path.join('assets', '**/*'),
           dest: path.join(options.folders.dist)
         }
       ]
