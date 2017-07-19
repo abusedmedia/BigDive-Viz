@@ -24,7 +24,7 @@
       d.pack = pack(str)
     })
 
-    var cols = d3.scaleOrdinal(d3.schemeCategory20)
+    var mapCol = d3.scaleOrdinal(window.APP.countryPalette)
 
     var col = svg.append('g')
             .selectAll('g')
@@ -46,7 +46,7 @@
             .attr('r', d => d.r)
             .attr('cx', d => d.x + pad)
             .attr('cy', d => d.y + pad)
-            // .style('fill', d => cols(d.data.NATION))
+            .style('fill', d => mapCol(d.data.country))
   }
 
   window.APP.by_divers = init

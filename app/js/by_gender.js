@@ -12,10 +12,8 @@
 
     var w = 500 // document.body.clientWidth
     var h = 100
-    var pad = 5
+    var pad = 20
     var pw = w / editions.length
-
-    var cols = d3.scaleOrdinal(d3.schemeCategory20)
 
     var max = d3.max(editions, d => {
       return d3.max(d.values, c => c.values.length)
@@ -31,6 +29,8 @@
     var fx = (pw - pad * 2) / maxEl
 
     var svg = d3.select('#by_gender').attr('viewBox', `0 0 ${w} ${h}`)
+
+    var mapCol = d3.scaleOrdinal().domain(['M', 'F']).range(window.APP.genderPalette)
 
     var col = svg.append('g')
             .selectAll('g')
@@ -52,7 +52,7 @@
         .attr('height', d => mapH(d.values.length))
         .attr('x', (d, i) => pad + i * fx)
         .attr('y', d => h - mapH(d.values.length) - pad)
-        // .style('fill', d => cols(d.key))
+        .style('fill', d => mapCol(d.key))
   }
 
   window.APP.by_gender = init

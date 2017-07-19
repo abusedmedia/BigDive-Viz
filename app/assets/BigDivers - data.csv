@@ -1,6 +1,6 @@
 id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
 1,Giuseppe Federico,Gullo,M,IT,Torino,5,Mobile application engineer,CEO & Founder,Avada Technologies
-2,Soren,Heitmann,F,TR,Istanbul,5,Economist,Applied research to scale digital financial services for financial inclusion,IFC - International Finance Corporation
+2,Soren,Heitmann,M,TR,Istanbul,5,Economist,Applied research to scale digital financial services for financial inclusion,IFC - International Finance Corporation
 3,Teresa,Kubacka,F,CH,Zurich Area,5,PhD student / Research Assistant,Dr. sc. ETH Zurich,Die Mobiliar
 4,Giacomo,Leonzi,M,IT,Torino,5,Free Lance Maker,Internet of Things/ Physical Computing/ Prototyping,Kiwifarm
 5,Martin,Muller,M,CH,Zurich,5,Scientific Assistant,PHD Student,EPFL
@@ -22,7 +22,7 @@ id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
 21,Antonino,Barbera,M,CH,Lausanne,5,Student-Avada founder-ICT support engineer,COO & Founder,Envolvi
 22,Lorenzo,Argante,M,IT,Torino,5,Postdoctoral researcher,Researcher,ISI Foundation
 23,Andrea,Beccaris,M,IT,Torino,5,Software Engineer,Software Engineer,TOP-IX Consortium
-24,Buri,Sinja,M,SN,Dakar,5,Monitoring & Evaluation Consultant,(Data) Operations Analyst at IFC,International Finance Corporation
+24,Buri,Sinja,F,SN,Dakar,5,Monitoring & Evaluation Consultant,(Data) Operations Analyst at IFC,International Finance Corporation
 25,Andrea,Flori,M,IT,Siena,5,PhD Student,Post Doctoral Fellow,IMT School for Advanced Studies Lucca
 26,Giuseppe,Di Bernardo,M,DE,Monaco,5,Postdoctoral Fellow at Max Planck Institute for Astrophysics,Data Science at Max Planck Computing and Data Facility,Chalmers University of Technology
 27,Matteo,Giaretti,M,IT,Torino,5,reliability engineer,Data Scientist,Intesa Sanpaolo
@@ -36,7 +36,7 @@ id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
 35,Antonella,Mauri,F,IT,Milano,1,SW TECHNICAL LEADER,Entrepreneur in Software Design & Development,Yottacle srl
 36,Piotr,Migdal,M,PL,Varsavia,1,PhD student,Data Scientist |  Quantum Physics PhD,deepsense.io
 37,René,Pfitzner,M,CH,Zurich Area,1,Lead Data Scientist bei Neue Zürcher Zeitung,null,Neue Zürcher Zeitung
-38,Andrea,Pigato,M,UK,Londra,1,student developer,Contract Full-stack Web Developer,Fruktarbo ltd.
+38,Andrea,Pigato,M,GB,Londra,1,student developer,Contract Full-stack Web Developer,Fruktarbo ltd.
 39,Roberto,Piuca,M,IT,Reggio Emilia,1,null,Head of Business Development at Way Srl,WAY Srl
 40,Francesco,Portoso,M,LU,Lussemburgo,1,freelancer,Technical Account Manager at Amazon Digital Music,Amazon
 41,Edoardo,Tenani,M,IT,Londra,1,Web developer,Senior Full Stack Web Developer,Vitsoe
@@ -50,29 +50,29 @@ id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
 49,David Martin,Borregon,M,ES,Barcellona,2,Student,Data Scientist,Typeform.com
 50,Piero,Molino,M,US,San Francisco Bay Area,2,PhD. Student and Startupper,Research Scientist,Uber
 51,Andrea,Peretti,M,IT,Torino,2,null,Analista programmatore VR e AR,Illogic
-52,Maximilien,Rzepka,M,UK,Londra,2,Developer,Software Developer,pi ltd
+52,Maximilien,Rzepka,M,GB,Londra,2,Developer,Software Developer,pi ltd
 53,Marco,Sors,M,IT,Venezia,2,Frontend developer,Freelance frontend & dataviz developer,Free Lancer
 54,Erika,Vicaretti,F,IT,Torino,2,designer,Graphic & Information Designer,Bianco Tangerine
 55,Enrico,Zimuel,M,IT,Torino,2,Software Engineer,Senior Software Engineer,Rogue Wave Software
-56,Claudio,Bellei,M,UK,Londra,3,Postdoc,Data Scientist,Elsevier
+56,Claudio,Bellei,M,GB,Londra,3,Postdoc,Data Scientist,Elsevier
 57,Carlo,Bergoglio,M,IT,Torino,3,IT Engineer / DB Administrator / Java Web Developer,IT Engineer - Big Data Specialist,GET Italia
 58,Luca,Ferreri,M,IT,Torino,3,PhD student,Data Scientist,aizoOn
 59,Matteo,Chinazzi,M,US,Boston,3,PhD Student,Associate Research Scientist,Northeastern University
-60,Meltem,Gürel,M,UK,Cambridge,3,IT Director at NGO The Comrads Brussels Belgium,PHD Student,Cancer Research UK Cambridge Institute
+60,Meltem,Gürel,F,GB,Cambridge,3,IT Director at NGO The Comrads Brussels Belgium,PHD Student,Cancer Research UK Cambridge Institute
 61,Gordon,Hatusupy,M,CA,Ottawa,3,Information Designer,Senior Product Designer (data visualization / ux),Shopify
 62,Bryan,Iotti,M,IT,Torino,3,Intern at the Department of Veterinary Sciences University of Turin,PHD Student,University of Turin
 63,Marcin,Kaszynski,M,PL,Varsavia,3,Software Engineer Team Lead Consultant,Software Engineer,Stealth Robotics Startup
 64,Vito,Mandorino,M,FR,Parigi,3,Postdoc in mathematics,Chief Scientist,Lingua Custodia
-65,Vahan,Nanumyan,F,CH,Zurich Area,3,Student,PhD Candidate,ETH Zurich
+65,Vahan,Nanumyan,M,CH,Zurich Area,3,Student,PhD Candidate,ETH Zurich
 66,Lorenzo,Napolitano,M,IT,Pisa,3,Phd Student,Student,Istituto Superiore Sant'Anna
 67,Orion,Penner,M,CH,Geneva Area,3,Assistant Professor,Postdoctoral Researcher,EPFL
 68,Pierre,Prinetti,M,DE,Berlino,3,Data specialist Regione Valle d'Aosta Wannabe startupper,Software Developer,Campanda
 69,Carlo,Recchia,M,IT,Torino,3,Information Security Specialist,Information Security Specialist,Enel
 70,Simone,Basso,M,IT,Torino,4,researcher,Research Fellow,Nexa Center for Internet & Society
-71,Chiara,Barbagianni,F,UK,null,4,Part-time lecturer researcher language services specialist,Computational Linguist Language Consultant Lecturer and Researcher,Vodafone
+71,Chiara,Barbagianni,F,GB,null,4,Part-time lecturer researcher language services specialist,Computational Linguist Language Consultant Lecturer and Researcher,Vodafone
 72,Roberto,Catini,M,IT,Lucca,4,PhD Candidate,Data Scientist,IMT Lucca Institute for Advanced Studies
 73,Andrea,Corradi,M,IT,Milano,4,Electronic engineering,Interaction and information designer,null
-74,Hai,Dao Thanh,F,VN,Leeds,4,PhD student,Optical Network Engineer,University of Leeds
+74,Hai,Dao Thanh,M,VN,Leeds,4,PhD student,Optical Network Engineer,University of Leeds
 75,Isabella,David,F,IT,Torino,4,DATA ANALYST-ECONOMETRICIAN,Senior Data Analyst,AXA
 76,Enrico,Deusebio,M,IT,Milano,4,Post-doctoral Researcher (University of Cambridge),Data Scientist,CGnal Spa
 77,Alfredo,Favenza,M,IT,Torino,4,Researcher,R&D Project Manager,Istituto Superiore Mario Boella (ISMB)

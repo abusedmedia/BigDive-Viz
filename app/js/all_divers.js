@@ -3,6 +3,10 @@
     var w = 550 // document.body.clientWidth
     var h = 250
 
+    var countries = d3.nest().key(d => d.country).entries(data)
+    var genders = d3.nest().key(d => d.gender).entries(data)
+    var editions = d3.nest().key(d => d.edition).entries(data)
+
     var circles
 
     var svg = d3.select('#all_divers').attr('viewBox', `0 0 ${w} ${h}`)
@@ -12,18 +16,16 @@
                     .padding(1)
                     // .radius(() => Math.random() + 10)
 
-    var palette = ['#DFC5B4', '#C8AB95', '#668597', '#416783', '#819593', '#767570', '#C54443', '#A73835', '#9B4321', '#4F332B', '#754F3C', '#F1A353', '#F28C53', '#F7C195', '#F6B692']
-    palette = d3.shuffle(palette)
-
     var states = ['', 'country', 'gender', 'edition']
     var indexState = 0
 
-    var countryColor = d3.scaleOrdinal(palette)
-    var genderColor = d3.scaleOrdinal().domain(['M', 'F']).range(['#668597', '#C54443'])
-    var editionColor = d3.scaleOrdinal(palette)
+    var countryColor = d3.scaleOrdinal(window.APP.countryPalette)
+    var genderColor = d3.scaleOrdinal().domain(['M', 'F']).range(window.APP.genderPalette)
+    var editionColor = d3.scaleOrdinal(window.APP.editionPalette)
 
     function draw () {
       var key = states[indexState]
+
       var str = d3.hierarchy({root: 'r', children: data})
                               .sort((a, b) => d3.ascending(a.data[key], b.data[key]))
                               .sum(d => d.age)
@@ -33,6 +35,20 @@
       circles = svg.selectAll('circle')
           .data(packed.children, d => d.data.id)
 
+      switch (key) {
+        case 'country':
+          scramble(`From ${countries.length} different countries`)
+          break
+
+        case 'gender':
+          var perc = 100 * genders[1].values.length / data.length
+          scramble(`${parseInt(perc)}% are ladies`)
+          break
+
+        default:
+          scramble(`There are ${data.length} divers across ${editions.length} editions`)
+      }
+
       var newcircles = circles.enter()
           .append('circle')
           .attr('r', 0)
@@ -41,14 +57,20 @@
 
       circles.merge(newcircles)
           .transition()
-          .duration(1000)
-          .ease(d3.easeExpInOut)
-          .delay((d, i) => i * 10)
+          .duration(750)
+          .ease(d3.easeExpIn)
+          .delay((d, i) => i * 1)
+          .attr('r', 0)
+          .attr('cx', d => d.x)
+          .attr('cy', d => d.y)
+          .transition()
+          .duration(750)
+          .ease(d3.easeExpOut)
           .attr('r', d => d.r)
           .attr('cx', d => d.x)
           .attr('cy', d => d.y)
           .style('fill', d => {
-            var c = 'white'
+            var c = '#ccc'
             if (states[indexState] == 'country') {
               c = countryColor(d.data.country)
             }
@@ -93,6 +115,10 @@
 
     this.deselect = function () {
       circles.style('fill', null)
+    }
+
+    function scramble (str) {
+      TweenMax.to('#subtitle', 1, {scrambleText: {text: str, chars: '1234567890', speed: 0.5}, delay: 0.5, ease: Linear.easeNone})
     }
 
     return this

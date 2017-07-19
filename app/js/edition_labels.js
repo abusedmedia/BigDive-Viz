@@ -10,6 +10,7 @@
         .data(editions)
         .enter()
         .append('div')
+        .append('p')
         .text(d => `BigDive #${d.key}`)
   }
 
