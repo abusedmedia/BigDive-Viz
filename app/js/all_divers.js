@@ -60,9 +60,9 @@
           .attr('transform', `translate(${w / 2}, ${h / 2})`)
 
       newcircles.append('circle')
-          .attr('r', d => d.r)
-          .classed('intro', true)
-          .attr('opacity', 0)
+        .attr('r', d => d.r)
+        .classed('intro', true)
+        .attr('display', 'none')
 
       newcircles.append('image')
         .classed('diver', true)
@@ -74,7 +74,7 @@
         .attr('height', d => d.r * 2)
         .attr('x', d => -d.r)
         .attr('y', d => -d.r)
-        .attr('opacity', 0)
+        .attr('display', 'none')
 
       newcircles.append('image')
         .classed('country', true)
@@ -86,19 +86,19 @@
         .attr('height', d => d.r * 2)
         .attr('x', d => -d.r)
         .attr('y', d => -d.r)
-        .attr('opacity', 0)
+        .attr('display', 'none')
 
       newcircles.append('circle')
           .attr('r', d => d.r)
           .classed('gender', true)
-          .attr('opacity', 0)
           .style('fill', d => window.APP.genderPalette[d.data.gender])
+          .attr('display', 'none')
 
       newcircles.append('circle')
-          .attr('r', d => d.r)
-          .classed('edition', true)
-          .attr('opacity', 0)
-          .style('fill', (d, i) => window.APP.editionPalette[d.data.edition])
+        .attr('r', d => d.r)
+        .classed('edition', true)
+        .style('fill', (d, i) => window.APP.editionPalette[d.data.edition])
+        .attr('display', 'none')
 
       circles.merge(newcircles)
           // .transition()
@@ -130,20 +130,22 @@
 
       if (prevState) {
         circles.merge(newcircles).selectAll('.' + prevState)
-          .transition()
-          .duration(0)
-          .attr('opacity', 0)
+          // .transition()
+          // .duration(0)
+          // .attr('opacity', 0)
+          .attr('display', 'none')
       }
 
       circles.merge(newcircles).selectAll('.' + key)
-        .attr('transform', 'scale(.1)')
+        .attr('transform', 'scale(.01)')
+        .attr('display', 'block')
         .transition()
         .delay((d, i) => {
-          return +d.data.id * 10
+          return +d.data.id * 5
         })
-        .duration(1000)
+        .duration(750)
         .ease(d3.easeExpInOut)
-        .attr('opacity', 1)
+        // .attr('opacity', 1)
         .attr('transform', 'scale(1)')
 
       prevState = key
@@ -183,7 +185,7 @@
     }
 
     function scramble (str) {
-      TweenMax.to('#subtitle', 1, {scrambleText: {text: str, chars: '1234567890', speed: 0.5}, delay: 0.5, ease: Linear.easeNone})
+      TweenMax.to('#subtitle', 1, {scrambleText: {text: str, chars: '1234567890', speed: 0.5}, delay: 1.5, ease: Linear.easeNone})
     }
 
     return this
