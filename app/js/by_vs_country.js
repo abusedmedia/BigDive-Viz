@@ -38,6 +38,8 @@
 
     var svg = d3.select('#by_vs_country').attr('viewBox', `0 0 ${w} ${h}`)
 
+    var mapCol = d3.scaleOrdinal(d3.schemeCategory20)
+
     var col = svg.append('g')
             .selectAll('g')
             .data(editions)
@@ -59,7 +61,7 @@
         .attr('height', d => mapH(d))
         .attr('x', (d, i) => padX + i * fx)
         .attr('y', d => h - mapH(d))
-        .style('fill', (d, i) => window.APP.vsPalette[i])
+        .style('fill', (d, i) => mapCol(i))
 
     col.selectAll('text')
         .data(d => d.value)

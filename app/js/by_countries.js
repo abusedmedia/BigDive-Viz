@@ -32,7 +32,7 @@
 
     var svg = d3.select('#by_countries').attr('viewBox', `0 0 ${w} ${h}`)
 
-    var mapCol = d3.scaleOrdinal(window.APP.countryPalette)
+    var mapCol = d3.scaleOrdinal(d3.schemeCategory20)
 
     var col = svg.append('g')
             .selectAll('g')

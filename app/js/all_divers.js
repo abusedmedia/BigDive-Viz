@@ -16,7 +16,7 @@
                     .padding(3)
                     // .radius(() => Math.random() + 10)
 
-    var states = ['intro', 'diver', 'country', 'gender', 'age']
+    var states = ['intro', 'diver', 'country', 'gender']
     var indexState = 0
     var prevState
 
@@ -101,8 +101,8 @@
           .style('fill', (d, i) => window.APP.editionPalette[d.data.edition])
 
       circles.merge(newcircles)
-          .transition()
-          .duration(100)
+          // .transition()
+          // .duration(100)
           .attr('transform', d => `translate(${d.x}, ${d.y})`)
           // .transition()
           // .duration(750)
@@ -131,7 +131,7 @@
       if (prevState) {
         circles.merge(newcircles).selectAll('.' + prevState)
           .transition()
-          .duration(100)
+          .duration(0)
           .attr('opacity', 0)
       }
 

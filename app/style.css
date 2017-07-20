@@ -39,7 +39,7 @@ svg circle, svg rect{
 	fill: #555;
 }
 
-h1, h3, p{
+h1, h2, h3, p{
 	font-weight: 600;
 	color: #555;
 	text-align: center;
@@ -48,6 +48,9 @@ h1, h3, p{
 
 h1{
 	font-size: 3rem;
+}
+h2{
+	font-size: 2rem;
 }
 
 #header{
@@ -75,4 +78,19 @@ h1{
 footer{
 	padding: 2rem;
 	text-align: center;
+	font-size: .8rem;
+
+	margin-top: 1rem;
+	border-top: 1px solid white;
+}
+footer p{
+	margin: 0;
+	text-transform: capitalize;
+}
+footer p a{
+	color: black;
+}
+footer p a:hover{
+	background-color: black;
+	color: white;
 }
