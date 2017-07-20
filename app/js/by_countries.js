@@ -50,7 +50,7 @@
     var gr = col.append('g')
         .attr('transform', d => `translate(${((maxEl - d.values.length) * (fx)) / 2},0)`)
 
-    gr.selectAll('rect')
+    var rects = gr.selectAll('rect')
         .data(d => d.values)
         .enter()
         .append('rect')
@@ -79,6 +79,17 @@
         .attr('x', (d, i) => pad + i * fx)
         .style('font-size', 7)
         .style('fill', '#000')
+
+    rects.on('mouseenter', function (d) {
+      rects.style('fill', '#fff')
+      rects.each(function (c) {
+        if (c.key === d.key) d3.select(this).style('fill', '#f00')
+      })
+    })
+
+    rects.on('mouseleave', function () {
+      rects.style('fill', d => mapCol(d.key))
+    })
   }
 
   window.APP.by_countries = init

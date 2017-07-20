@@ -13,10 +13,10 @@
 
     var pack = d3.pack()
                     .size([w, h])
-                    .padding(5)
+                    .padding(3)
                     // .radius(() => Math.random() + 10)
 
-    var states = ['intro', 'diver', 'country', 'gender', 'edition']
+    var states = ['intro', 'diver', 'country', 'gender', 'age']
     var indexState = 0
     var prevState
 
@@ -80,7 +80,6 @@
         .classed('country', true)
         .attr('xlink:href', d => {
           var c = getCountryName(d.data.country).toLowerCase().replace(/ /g, '-')
-          console.log(c)
           return `assets/flag/svg/${c}.svg`
         })
         .attr('width', d => d.r * 2)
@@ -102,6 +101,8 @@
           .style('fill', (d, i) => window.APP.editionPalette[d.data.edition])
 
       circles.merge(newcircles)
+          .transition()
+          .duration(100)
           .attr('transform', d => `translate(${d.x}, ${d.y})`)
           // .transition()
           // .duration(750)
@@ -129,6 +130,8 @@
 
       if (prevState) {
         circles.merge(newcircles).selectAll('.' + prevState)
+          .transition()
+          .duration(100)
           .attr('opacity', 0)
       }
 
@@ -139,8 +142,11 @@
           return +d.data.id * 10
         })
         .duration(1000)
+        .ease(d3.easeExpInOut)
         .attr('opacity', 1)
         .attr('transform', 'scale(1)')
+
+      prevState = key
 
       circles.on('mouseenter', (d) => {
         console.log(d.data)
@@ -149,8 +155,6 @@
       .on('mouseleave', (d) => {
         // this.deselect()
       })
-
-      prevState = key
     }
 
     draw()
