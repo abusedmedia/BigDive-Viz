@@ -88,3 +88,23 @@ id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
 87,Jonas,Liechti,M,CH,Zurich,1,PhD Candidate,null,null
 88,Kewin,Ewe,M,US,San Francisco,1,Software Developer,Builder of Stuff,IDEO
 89,Emanuele,Balboni,M,IT,Pino Torinese,1,scientific collaborator at INFINI.TO Turin Planetarium,Collaboratore Scientifico,Associazione Apriti Cielo
+90,Ottavia,Prunas,F,IT,Torino,6,Student,Student,null
+91,Igor,Mosyagin,M,RUS,Linkoping,6,PhD Student,PhD Student,null
+92,Urszula,Czerwinska,M,PL,Paris,6,PhD Candidate,PhD Candidate,null
+93,Giovanni,Zattera,M,IT,Torino,6,Student,Student,null
+94,Andreas,Masaoutis,M,GR,Torino,6,unemployed,unemployed,null
+95,Julia,Conrad,F,DE,Dakar,6,Consultant,Consultant IFC,IFC - International Finance Corporation
+96,Alberto,Colliva,M,IT,Torino,6,PhD Student,PhD Student,null
+97,Giovanni,Nappi,M,IT,Torino,6,Innovation Technology and Research,Innovation Technology and Research,Fondaco SGR
+98,Cecilia,Panigutti,F,IT,Torino,6,Junior Data Scientist,Junior Data Scientist,aizoOn
+99,Carlo,Fisicaro,M,IT,Torino,6,Student,Student,null
+100,Stefano,Galati,M,IT,Rivalta di Torino,6,IT Project Manager / System Admin,IT Project Manager / System Admin,TESI s.p.a
+101,Giulio Virginio,Clemente,M,IT,Torino,6,Student,Student,null
+102,Parthiban,Srinivasan,M,IND,Chennai,6,Startupper,Startupper,Reverse Informatics
+103,Valeria ,Gelardi,F,IT,Torino,6,Junior Data Scientist,Junior Data Scientist,TOP-IX Consortium
+104,Samuel,Nale,M,IT,Torino,6,Student,Student,null
+105,Alberto ,Zavallone,M,IT,Torino,6,Financial Analyst,Financial Analyst,Banca Sella Holding
+106,Luca,Croin,M,IT,Salerano Canavese (TO),6,Post-Doc,Post-Doc,INRiM (Istituto Nazionale di Ricerca Metrologica)
+107,Linda,Mazzucco,M,IT,Torino,6,Social Media Manager,Social Media Manager,null
+108,Dario,Cardamone,M,IT,Torino,6,Student,Student,null
+109,Fabio ,Rosa,M,IT,Asti,6,ICT Consultant,ICT Consultant,MC4 Software
