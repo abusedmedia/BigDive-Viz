@@ -32,8 +32,6 @@
 
     var svg = d3.select('#by_gender').attr('viewBox', `0 0 ${w} ${h}`)
 
-    var mapCol = d3.scaleOrdinal().domain(['M', 'F']).range(window.APP.genderPalette)
-
     var col = svg.append('g')
             .selectAll('g')
             .data(editions)
