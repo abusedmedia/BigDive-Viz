@@ -24,8 +24,51 @@ html, body{
 }
 
 
+#header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 200;
+	padding: 2rem;
+}
+
+.logo{
+	width: 250px;
+	text-align: right;
+
+}
+
+.logo img{
+	width: 100%;
+}
+
+.logo span{
+	color: #555;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	line-height: 0rem;
+}
+
+#subtitle{
+	border-top: 1px solid white;
+	padding-top: 1.5rem;
+	width: 100%;
+}
+
+.description{
+	border-top: 1px solid white;
+	padding: 1rem 3rem;
+	padding-top: 2rem;
+}
+
+.description p{
+	text-transform: none;
+	margin: 0;
+}
+
 svg{
     width: 100%;
+    overflow: visible;
 }
 
 #all_divers #right, #all_divers #left{
@@ -52,13 +95,8 @@ article{
 	}
 }
 
-svg circle, svg rect{
-	fill: #555;
-}
 
-#all_divers #breads rect{
-	fill: #606060;
-}
+
 
 h1, h2, h3, p{
 	font-weight: 600;
@@ -74,10 +112,7 @@ h2{
 	font-size: 2rem;
 }
 
-#header{
-	text-align: center;
-	font-weight: 200;
-}
+
 
 #edition_labels{
 	display: flex;
@@ -93,6 +128,8 @@ h2{
 
 .divider{
 	padding-top: 2rem;
+		border-top: 1px solid white;
+
 }
 
 #tooltip{
@@ -112,10 +149,10 @@ footer p{
 	margin: 0;
 	text-transform: capitalize;
 }
-footer p a{
+a{
 	color: black;
 }
-footer p a:hover{
+a:hover{
 	background-color: black;
 	color: white;
 }

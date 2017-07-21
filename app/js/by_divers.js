@@ -41,6 +41,7 @@
         .attr('height', d => mapH(d.values.length))
         .attr('x', padX)
         .attr('y', d => h - mapH(d.values.length))
+        .style('fill', '#768797')
 
     col.append('text')
         .text(d => d.values.length)

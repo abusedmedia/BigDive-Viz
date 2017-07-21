@@ -70,6 +70,7 @@
         .attr('r', d => d.r)
         .classed('intro', true)
         .attr('display', 'none')
+        .style('fill', '#768797')
 
       newcircles.append('image')
         .classed('diver', true)
@@ -168,13 +169,14 @@
 
       circles.on('mouseenter', (d) => {
         var name = `${d.data.first_name} ${d.data.last_name}`
+        if (key === 'country') name = getCountryName(d.data.country)
         tool.select('text').text(name)
-        tool.attr('transform', `translate(${d.x}, ${d.y - 45})`)
-          .transition()
-          .ease(d3.easeExpInOut)
-          .duration(350)
+        tool.attr('transform', `translate(${d.x}, ${d.y - 35})`)
           .attr('opacity', 1)
-          .attr('transform', `translate(${d.x}, ${d.y - 35})`)
+          // .transition()
+          // .ease(d3.easeExpInOut)
+          // .duration(350)
+          // .attr('transform', `translate(${d.x}, ${d.y - 35})`)
             // this.select(d.data.country)
       })
       .on('mouseleave', (d) => {

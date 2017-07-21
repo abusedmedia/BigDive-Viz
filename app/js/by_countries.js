@@ -32,8 +32,6 @@
 
     var svg = d3.select('#by_countries').attr('viewBox', `0 0 ${w} ${h}`)
 
-    var mapCol = d3.scaleOrdinal(d3.schemeCategory20)
-
     var col = svg.append('g')
             .selectAll('g')
             .data(editions)
@@ -58,7 +56,7 @@
         .attr('height', d => mapH(d.values.length))
         .attr('x', (d, i) => pad + i * fx)
         .attr('y', d => h - mapH(d.values.length) - pad - 2)
-        .style('fill', d => mapCol(d.key))
+        .style('fill', '#768797')
 
     gr.selectAll('image')
         .data(d => d.values)
@@ -83,12 +81,12 @@
     rects.on('mouseenter', function (d) {
       rects.style('fill', '#fff')
       rects.each(function (c) {
-        if (c.key === d.key) d3.select(this).style('fill', '#f00')
+        if (c.key === d.key) d3.select(this).style('fill', '#D80F0C')
       })
     })
 
     rects.on('mouseleave', function () {
-      rects.style('fill', d => mapCol(d.key))
+      rects.style('fill', '#768797')
     })
   }
 
