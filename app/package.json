@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "d3": "^4.9.1"
+    "d3": "^4.9.1",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "static-player": "0.0.13"
   },
   "devDependencies": {},
   "scripts": {

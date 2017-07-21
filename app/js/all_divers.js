@@ -1,7 +1,8 @@
 ;(function (d3) {
   function init (data) {
     var w = 550 // document.body.clientWidth
-    var h = 250
+    var h = 300
+    var h2 = 275
 
     var countries = d3.nest().key(d => d.country).entries(data)
     var genders = d3.nest().key(d => d.gender).entries(data)
@@ -9,10 +10,15 @@
 
     var circles
 
-    var svg = d3.select('#all_divers').attr('viewBox', `0 0 ${w} ${h}`)
+    var svg = d3.select('#all_divers svg').attr('viewBox', `0 0 ${w} ${h}`)
+    var dots = svg.append('g')
+    svg.selectAll(`#breads rect`)
+        .attr('opacity', 0.2)
+
+    var tool
 
     var pack = d3.pack()
-                    .size([w, h])
+                    .size([w, h2])
                     .padding(3)
                     // .radius(() => Math.random() + 10)
 
@@ -52,11 +58,12 @@
           break
       }
 
-      circles = svg.selectAll('g')
+      circles = dots.selectAll('.elements')
           .data(packed.children, d => d.data.id)
 
       var newcircles = circles.enter()
           .append('g')
+          .classed('elements', true)
           .attr('transform', `translate(${w / 2}, ${h / 2})`)
 
       newcircles.append('circle')
@@ -134,7 +141,18 @@
           // .duration(0)
           // .attr('opacity', 0)
           .attr('display', 'none')
+
+        var prevIndex = states.indexOf(prevState)
+        svg.selectAll(`#breads rect:nth-child(${prevIndex + 1})`)
+          .transition()
+          .attr('opacity', 0.2)
       }
+
+      prevState = key
+
+      svg.selectAll(`#breads rect:nth-child(${indexState + 1})`)
+        .transition()
+        .attr('opacity', 1)
 
       circles.merge(newcircles).selectAll('.' + key)
         .attr('transform', 'scale(.01)')
@@ -148,28 +166,39 @@
         // .attr('opacity', 1)
         .attr('transform', 'scale(1)')
 
-      prevState = key
-
       circles.on('mouseenter', (d) => {
-        console.log(d.data)
+        var name = `${d.data.first_name} ${d.data.last_name}`
+        tool.select('text').text(name)
+        tool.attr('transform', `translate(${d.x}, ${d.y - 45})`)
+          .transition()
+          .ease(d3.easeExpInOut)
+          .duration(350)
+          .attr('opacity', 1)
+          .attr('transform', `translate(${d.x}, ${d.y - 35})`)
             // this.select(d.data.country)
       })
       .on('mouseleave', (d) => {
+        tool.attr('opacity', 0)
         // this.deselect()
       })
     }
 
     draw()
+    createToolTip()
 
-    svg.on('click', function () {
-      console.log('click', indexState)
+    svg.select('#right').on('click', function () {
       indexState++
       if (indexState >= states.length) indexState = 0
       draw()
     })
 
+    svg.select('#left').on('click', function () {
+      indexState--
+      if (indexState < 0) indexState = states.length - 1
+      draw()
+    })
+
     this.select = function (id) {
-      console.log(id)
       circles.each(function (d, i) {
         var c = '#fff'
         if (d.data.country === id) {
@@ -185,7 +214,35 @@
     }
 
     function scramble (str) {
-      TweenMax.to('#subtitle', 1, {scrambleText: {text: str, chars: '1234567890', speed: 0.5}, delay: 1.5, ease: Linear.easeNone})
+      TweenMax.to('#subtitle', 1, {scrambleText: {text: str, chars: '1234567890', speed: 0.5}, delay: 0.75, ease: Linear.easeNone})
+    }
+
+    function createToolTip () {
+      var ww = 100
+      var hh = 20
+
+      tool = svg.append('g')
+        .attr('id', 'tooltip')
+        .attr('opacity', 0)
+
+      tool.append('rect')
+        .attr('width', ww)
+        .attr('height', hh)
+        .attr('x', ww / 2 * -1)
+        .attr('y', 0)
+        .style('fill', 'black')
+
+      tool.append('polygon')
+        .attr('points', '0 0 14 0 7 6')
+        .style('fill', 'black')
+        .attr('transform', `translate(-7, ${hh - 1})`)
+
+      tool.append('text')
+        .style('fill', 'white')
+        .style('text-anchor', 'middle')
+        .style('font-size', '10')
+        .attr('y', 14)
+        .text('Fabio Franchino')
     }
 
     return this

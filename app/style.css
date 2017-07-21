@@ -28,6 +28,10 @@ svg{
     width: 100%;
 }
 
+#all_divers #right, #all_divers #left{
+	cursor: pointer;
+}
+
 main{
     background-color: #eaeaea;
 	width: 100%;
@@ -50,6 +54,10 @@ article{
 
 svg circle, svg rect{
 	fill: #555;
+}
+
+#all_divers #breads rect{
+	fill: #606060;
 }
 
 h1, h2, h3, p{
@@ -85,6 +93,10 @@ h2{
 
 .divider{
 	padding-top: 2rem;
+}
+
+#tooltip{
+	pointer-events: none;
 }
 
 

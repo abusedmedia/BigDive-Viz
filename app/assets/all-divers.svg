@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 550 300" enable-background="new 0 0 550 300" xml:space="preserve">
+<g id="nav">
+	<g id="left">
+		<g opacity="0">
+			<rect x="4.5" y="105.5" fill="#FFFFFF" width="46" height="68"/>
+		</g>
+		<polyline fill="none" stroke="#B3B3B3" stroke-miterlimit="10" points="38.5,113.5 13,139 38.5,164.5 		"/>
+	</g>
+	<g id="right">
+		<g opacity="0">
+			<rect x="498" y="106" fill="#FFFFFF" width="46" height="68"/>
+		</g>
+		<polyline fill="none" stroke="#B3B3B3" stroke-miterlimit="10" points="511,164.5 536.5,139 511,113.5 		"/>
+	</g>
+</g>
+<g id="breads">
+	<rect x="220" y="291" width="20" height="2"/>
+	<rect x="250" y="291" width="20" height="2"/>
+	<rect x="280" y="291" width="20" height="2"/>
+	<rect x="310" y="291" width="20" height="2"/>
+</g>
+</svg>
