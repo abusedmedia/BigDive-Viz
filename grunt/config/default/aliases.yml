@@ -16,6 +16,7 @@ build:
   - 'uglify:generated'
   - 'cssmin:generated'
   - 'usemin'
+  - 'string-replace:ga'
 
   - 'svgmin'
   - 'static_player:bake'
