@@ -90,7 +90,7 @@ id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
 89,Emanuele,Balboni,M,IT,Pino Torinese,1,scientific collaborator at INFINI.TO Turin Planetarium,Collaboratore Scientifico,Associazione Apriti Cielo
 90,Ottavia,Prunas,F,IT,Torino,6,Student,Student,null
 91,Igor,Mosyagin,M,RU,Linkoping,6,PhD Student,PhD Student,null
-92,Urszula,Czerwinska,M,PL,Paris,6,PhD Candidate,PhD Candidate,null
+92,Urszula,Czerwinska,F,PL,Paris,6,PhD Candidate,PhD Candidate,null
 93,Giovanni,Zattera,M,IT,Torino,6,Student,Student,null
 94,Andreas,Masaoutis,M,GR,Torino,6,unemployed,unemployed,null
 95,Julia,Conrad,F,DE,Dakar,6,Consultant,Consultant IFC,IFC - International Finance Corporation
@@ -105,6 +105,6 @@ id,first_name,last_name,gender,country,city,edition,past_job,last_job,company
 104,Samuel,Nale,M,IT,Torino,6,Student,Student,null
 105,Alberto ,Zavallone,M,IT,Torino,6,Financial Analyst,Financial Analyst,Banca Sella Holding
 106,Luca,Croin,M,IT,Salerano Canavese (TO),6,Post-Doc,Post-Doc,INRiM (Istituto Nazionale di Ricerca Metrologica)
-107,Linda,Mazzucco,M,IT,Torino,6,Social Media Manager,Social Media Manager,null
+107,Linda,Mazzucco,F,IT,Torino,6,Social Media Manager,Social Media Manager,null
 108,Dario,Cardamone,M,IT,Torino,6,Student,Student,null
 109,Fabio ,Rosa,M,IT,Asti,6,ICT Consultant,ICT Consultant,MC4 Software
