@@ -33,7 +33,7 @@ module.exports = function (grunt, options) {
         {
           expand: true,
           cwd: options.folders.app,
-          src: ['*.html', '**/*.html', '!node_modules/**/*'],
+          src: ['*.html', '**/*.html', '!node_modules/**/*', 'CNAME'],
           dest: options.folders.dist
         },
         {
