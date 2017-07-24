@@ -22,7 +22,7 @@
                     .padding(3)
                     // .radius(() => Math.random() + 10)
 
-    var states = ['intro', 'diver', 'country', 'gender']
+    var states = ['intro', 'diver', 'country', 'gender', 'age']
     var indexState = 0
     var prevState
 
@@ -31,7 +31,7 @@
 
       var str = d3.hierarchy({root: 'r', children: data})
                               .sort((a, b) => d3.ascending(a.data[key], b.data[key]))
-                              .sum(d => d.age)
+                              .sum(d => d.num)
 
       var packed = pack(str)
 
@@ -51,6 +51,12 @@
         case 'gender':
           var perc = 100 * genders[1].values.length / data.length
           scramble(`${parseInt(perc)}% are ladies`)
+          break
+
+        case 'age':
+          var min = d3.min(data, d => (d.age !== '') ? +d.age : 100)
+          var max = d3.max(data, d => +d.age)
+          scramble(`Age range: ${min} - ${max}`)
           break
 
         case 'edition':
@@ -102,9 +108,15 @@
           .style('fill', d => window.APP.genderPalette[d.data.gender])
           .attr('display', 'none')
 
+      // newcircles.append('circle')
+      //   .attr('r', d => d.r)
+      //   .classed('edition', true)
+      //   .style('fill', (d, i) => window.APP.editionPalette[d.data.edition])
+      //   .attr('display', 'none')
+
       newcircles.append('circle')
         .attr('r', d => d.r)
-        .classed('edition', true)
+        .classed('age', true)
         .style('fill', (d, i) => window.APP.editionPalette[d.data.edition])
         .attr('display', 'none')
 
@@ -160,7 +172,7 @@
         .attr('display', 'block')
         .transition()
         .delay((d, i) => {
-          return +d.data.id * 5
+          return Math.random() * 500
         })
         .duration(750)
         .ease(d3.easeExpInOut)
@@ -170,6 +182,7 @@
       circles.on('mouseenter', (d) => {
         var name = `${d.data.first_name} ${d.data.last_name}`
         if (key === 'country') name = getCountryName(d.data.country)
+        if (key === 'age') name = d.data.age
         tool.select('text').text(name)
         tool.attr('transform', `translate(${d.x}, ${d.y - 35})`)
           .attr('opacity', 1)

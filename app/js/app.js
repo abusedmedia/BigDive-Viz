@@ -13,7 +13,8 @@
     d3.csv('assets/BigDive - divers.csv', data => {
       console.log(data)
 
-      data.forEach(d => d.age = Math.random() * 10 + 20)
+      data.forEach(d => d.num = Math.random() * 10 + 20)
+      data.forEach(d => d.id = `${d.first_name}_${d.last_name}`)
 
       var alldiv = APP.all_divers(data)
 
@@ -22,6 +23,7 @@
       APP.by_countries(data)
       APP.by_vs_country(data)
       APP.by_gender(data)
+      APP.by_age(data)
     // APP.all_countries(data)
     })
   })

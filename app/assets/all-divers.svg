@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 550 300" enable-background="new 0 0 550 300" xml:space="preserve">
+	 viewBox="0 0 550 300" style="enable-background:new 0 0 550 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#768797;stroke-miterlimit:10;}
+	.st3{fill:#768797;}
+</style>
 <g id="nav">
 	<g id="left">
-		<g opacity="0">
-			<rect x="4.5" y="105.5" fill="#FFFFFF" width="46" height="68"/>
+		<g class="st0">
+			<rect x="4.5" y="105.5" class="st1" width="46" height="68"/>
 		</g>
-		<polyline fill="none" stroke="#768797" stroke-miterlimit="10" points="38.5,113.5 13,139 38.5,164.5 		"/>
+		<polyline class="st2" points="38.5,113.5 13,139 38.5,164.5 		"/>
 	</g>
 	<g id="right">
-		<g opacity="0">
-			<rect x="498" y="106" fill="#FFFFFF" width="46" height="68"/>
+		<g class="st0">
+			<rect x="498" y="106" class="st1" width="46" height="68"/>
 		</g>
-		<polyline fill="none" stroke="#768797" stroke-miterlimit="10" points="511,164.5 536.5,139 511,113.5 		"/>
+		<polyline class="st2" points="511,164.5 536.5,139 511,113.5 		"/>
 	</g>
 </g>
 <g id="breads">
-	<rect fill="#768797" x="220" y="291" width="20" height="2"/>
-	<rect fill="#768797" x="250" y="291" width="20" height="2"/>
-	<rect fill="#768797" x="280" y="291" width="20" height="2"/>
-	<rect fill="#768797" x="310" y="291" width="20" height="2"/>
+	<rect x="203" y="291" class="st3" width="20" height="2"/>
+	<rect x="234" y="291" class="st3" width="20" height="2"/>
+	<rect x="265" y="291" class="st3" width="20" height="2"/>
+	<rect x="296" y="291" class="st3" width="20" height="2"/>
+	<rect x="327" y="291" class="st3" width="20" height="2"/>
 </g>
 </svg>
