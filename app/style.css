@@ -156,3 +156,14 @@ a:hover{
 	background-color: black;
 	color: white;
 }
+
+
+
+
+.ax text{
+	font-size: 6px;
+}
+.ax .tick line, .ax path{
+	shape-rendering: crispEdges;
+	stroke: #ccc;
+}

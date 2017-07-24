@@ -118,8 +118,8 @@
       var max = d3.max(data, d => +d.age)
 
       var mapAge = d3.scaleLinear()
-        .domain([min - 10, max + 10])
-        .range(['#768797', '#000'])
+        .domain([min, max])
+        .range(['#D80F0C', '#000'])
 
       newcircles.append('circle')
         .attr('r', d => d.r)

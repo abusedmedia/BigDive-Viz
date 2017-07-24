@@ -14,25 +14,21 @@
       })
     })
 
-    var minAge = d3.min(editions, d => d3.min(d.values, c => +c.key))
-    console.log(minAge)
-
-    var maxAge = d3.max(editions, d => d3.max(d.values, c => +c.key))
-    console.log(maxAge)
-
-    var start_age = minAge - 4
-    var end_age = maxAge + 4
-
     editions.forEach(d => {
-      for (var age = start_age; age < end_age; ++age) {
-        var present = false
-        d.values.forEach((c, i) => {
-          if (+c.key === age) present = true
-        })
-        if (!present) {
-          d.values.push({key: age + '', values: []})
+      var prev = null
+      var temp = []
+      d.values.forEach((c, i) => {
+        if (prev) {
+          var diff = (+c.key - prev) - 1
+          if (diff > 0) {
+            for (var i = 0; i < diff; ++i) {
+              temp.push({key: (prev + i + 1) + '', values: []})
+            }
+          }
         }
-      }
+        prev = +c.key
+      })
+      d.values = d.values.concat(temp)
       d.values.sort((a, b) => d3.ascending(a.key, b.key))
     })
 
@@ -44,6 +40,7 @@
     var padY = 12
 
     var pw = w / editions.length
+    var ph = h - 15
 
     var max = d3.max(editions, d => {
       return d3.max(d.values, c => c.values.length)
@@ -73,32 +70,49 @@
         .attr('y2', h)
         .style('stroke', '#fff')
 
-    var mapX = d3.scaleLinear()
-        .domain([0, end_age - start_age])
-        .range([0, pw])
-
     var mapY = d3.scaleLinear()
         .domain([0, max])
-        .range([0, h])
-
-    var line = d3.area()
-        .x((d, i) => mapX(i))
-        .y1((d, i) => h - mapY(d.values.length))
-        .y0(h)
-        .curve(d3.curveBasis)
+        .range([0, ph])
 
     col.append('path')
-        .attr('d', d => line(d.values))
+        .attr('d', d => {
+          var mn = d3.min(d.values, c => +c.key)
+          var mx = d3.max(d.values, c => +c.key)
+
+          console.log(mn, mx)
+
+          var mapX = d3.scaleLinear()
+                .domain([mn, mx])
+                .range([10, pw - 10])
+
+          var line = d3.area()
+                .x(d => mapX(+d.key))
+                .y1(d => ph - mapY(d.values.length))
+                .y0(ph)
+                .curve(d3.curveBasis)
+
+          return line(d.values)
+        })
         .style('stroke', 'none')
         .style('fill', '#768797')
 
-    // col.selectAll('circle')
-    //     .data(d => d.values)
-    //     .enter()
-    //     .append('circle')
-    //     .attr('r', 3)
-    //     .attr('cx', (d, i) => mapX(i))
-    //     .attr('cy', (d, i) => h - mapY(d.values.length))
+    col.append('g')
+        .attr('transform', `translate(0,${h - 13})`)
+        .classed('ax', true)
+        .each(function (d) {
+          var mn = d3.min(d.values, c => +c.key)
+          var mx = d3.max(d.values, c => +c.key)
+
+          var mapX = d3.scaleLinear()
+                .domain([mn, mx])
+                .range([10, pw - 10])
+
+          var ax = d3.axisBottom(mapX)
+            .tickValues([mn, mx])
+
+          d3.select(this)
+                .call(ax)
+        })
   }
 
   window.APP.by_age = init
