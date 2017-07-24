@@ -114,10 +114,17 @@
       //   .style('fill', (d, i) => window.APP.editionPalette[d.data.edition])
       //   .attr('display', 'none')
 
+      var min = d3.min(data, d => (d.age !== '') ? +d.age : 100)
+      var max = d3.max(data, d => +d.age)
+
+      var mapAge = d3.scaleLinear()
+        .domain([min - 10, max + 10])
+        .range(['#768797', '#000'])
+
       newcircles.append('circle')
         .attr('r', d => d.r)
         .classed('age', true)
-        .style('fill', (d, i) => window.APP.editionPalette[d.data.edition])
+        .style('fill', (d, i) => mapAge(d.data.age))
         .attr('display', 'none')
 
       circles.merge(newcircles)
