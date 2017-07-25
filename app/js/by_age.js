@@ -34,6 +34,10 @@
 
     console.log(editions)
 
+    var minAge = d3.min(editions, d => d3.min(d.values, c => +c.key)) - 2
+    var maxAge = d3.max(editions, d => d3.max(d.values, c => +c.key)) + 2
+    console.log(minAge, maxAge)
+
     var w = 500 // document.body.clientWidth
     var h = 100
     var padX = 24
@@ -74,6 +78,10 @@
         .domain([0, max])
         .range([0, ph])
 
+    var mapX = d3.scaleLinear()
+                .domain([minAge, maxAge])
+                .range([10, pw - 10])
+
     col.append('path')
         .attr('d', d => {
           var mn = d3.min(d.values, c => +c.key)
@@ -81,15 +89,11 @@
 
           console.log(mn, mx)
 
-          var mapX = d3.scaleLinear()
-                .domain([mn, mx])
-                .range([10, pw - 10])
-
           var line = d3.area()
                 .x(d => mapX(+d.key))
                 .y1(d => ph - mapY(d.values.length))
                 .y0(ph)
-                .curve(d3.curveBasis)
+                .curve(d3.curveMonotoneX)
 
           return line(d.values)
         })
@@ -103,16 +107,26 @@
           var mn = d3.min(d.values, c => +c.key)
           var mx = d3.max(d.values, c => +c.key)
 
-          var mapX = d3.scaleLinear()
-                .domain([mn, mx])
-                .range([10, pw - 10])
+          // var mapX = d3.scaleLinear()
+          //       .domain([minAge, maxAge])
+          //       .range([10, pw - 10])
 
           var ax = d3.axisBottom(mapX)
-            .tickValues([mn, mx])
+            .tickValues([minAge, maxAge])
 
           d3.select(this)
                 .call(ax)
         })
+
+    // col.selectAll('circle')
+    //   .data(d => d.values)
+    //   .enter()
+    //   .filter(d => d.values.length > 0)
+    //   .append('circle')
+    //   .attr('r', 1)
+    //   .attr('cx', d => mapX(+d.key))
+    //   .attr('cy', d => ph - mapY(d.values.length))
+    //   .style('fill', '#D80F0C')
   }
 
   window.APP.by_age = init
