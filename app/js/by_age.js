@@ -93,7 +93,7 @@
                 .x(d => mapX(+d.key))
                 .y1(d => ph - mapY(d.values.length))
                 .y0(ph)
-                .curve(d3.curveMonotoneX)
+                .curve(d3.curveBasis)
 
           return line(d.values)
         })
