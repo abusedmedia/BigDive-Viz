@@ -1,0 +1,135 @@
+first_name,last_name,course,age,gender,country,city,edition,type,past_job,last_job,company
+Luca,Bonavita,BIGDIVE,39,M,IT,Milano,1,,Engineer,Data Visualization Developer - Software Engineer,Free Lancer
+Ciara,Byrne,BIGDIVE,40,F,NL,Amsterdam,1,,Technology Journalist,Lapsed developer/ tech journalist/ product builder,MadeVivid
+Davide,D'Aprile,BIGDIVE,37,M,AE,Dubai,1,,Entrepreneur,"Digital Innovator & Strategist C-level/ PhD Scientist | Blockchain/ Big Data & AI Expert |Smart City & Open Data Advisor""",Smart Dubai Gov
+Niccolò,Favari,BIGDIVE,27,M,IT,Pavia,1,,Developer,Game Developer,Independent
+Fariba,Karimi,BIGDIVE,30,F,DE,Mannheim,1,,PhD student,Postdoctoral Fellow,GESIS
+Irene,Laino,BIGDIVE,26,F,IT,Torino,1,,Communication Specialist,Audience & Data Manager,Xaxis
+Claudio,Martines,BIGDIVE,28,M,IT,Taranto,1,,Electronic Engineer,Number (R)Evolutionary Visionary and expert in Security and Quality Management System,Holsys s.r.l.
+Antonella,Mauri,BIGDIVE,49,F,IT,Milano,1,,SW TECHNICAL LEADER,Entrepreneur in Software Design & Development,Yottacle srl
+Piotr,Migdal,BIGDIVE,26,M,PL,Varsavia,1,,PhD student,Data Scientist |  Quantum Physics PhD,deepsense.io
+René,Pfitzner,BIGDIVE,27,M,CH,Zurich Area,1,,Lead Data Scientist bei Neue Zürcher Zeitung,null,Neue Zürcher Zeitung
+Andrea,Pigato,BIGDIVE,24,M,GB,Londra,1,,student developer,Contract Full-stack Web Developer,Fruktarbo ltd.
+Roberto,Piuca,BIGDIVE,30,M,IT,Reggio Emilia,1,,null,Head of Business Development at Way Srl,WAY Srl
+Francesco,Portoso,BIGDIVE,26,M,LU,Lussemburgo,1,,freelancer,Technical Account Manager at Amazon Digital Music,Amazon
+Edoardo,Tenani,BIGDIVE,23,M,IT,Londra,1,,Web developer,Senior Full Stack Web Developer,Vitsoe
+Paolo,Viotti,BIGDIVE,26,M,FR,Alpes-Cote D'Azur,1,,Developer Junior ICT Architect Consultant,PhD student,EURECOM
+Marcello,Pietri,BIGDIVE,29,M,IT,Modena,1,,PhD student research,ICT Professor & ICT Manager,Università di Modena
+Marcelo Serrano,Zanetti,BIGDIVE,34,M,CH,Zurich,1,,PhD Student,null,null
+Jonas,Liechti,BIGDIVE,26,M,CH,Zurich,1,,PhD Candidate,null,null
+Kewin,Ewe,BIGDIVE,40,M,US,San Francisco,1,,Software Developer,Builder of Stuff,IDEO
+Emanuele,Balboni,BIGDIVE,28,M,IT,Pino Torinese,1,,scientific collaborator at INFINI.TO Turin Planetarium,Collaboratore Scientifico,Associazione Apriti Cielo
+Adiya,Abisheva,BIGDIVE,25,F,CH,Zurich,2,,PhD Student,null,null
+Alex,Comunian,BIGDIVE,23,M,IT,Torino,2,,/,Full Stack IT Engineer,TOP-IX Consortium
+Francesco,Corazza,BIGDIVE,25,M,IT,Milano,2,,Startupper,Product Manager,Empatica
+Andrea,Gaiardo,BIGDIVE,28,M,IT,Torino,2,,Phd & resercher,Innovation Designer,StarBoost Srl
+Giuseppe,Futia,BIGDIVE,26,M,IT,Torino,2,,Communication Manager at Nexa Center for Internet & Society - Politecnico di Torino,PhD Candidate,Nexa Center for Internet & Society
+David Martin,Borregon,BIGDIVE,25,M,ES,Barcellona,2,,Student,Data Scientist,Typeform.com
+Piero,Molino,BIGDIVE,26,M,US,San Francisco Bay Area,2,,PhD. Student and Startupper,Research Scientist,Uber
+Andrea,Peretti,BIGDIVE,22,M,IT,Torino,2,,null,Analista programmatore VR e AR,Illogic
+Maximilien,Rzepka,BIGDIVE,36,M,GB,Londra,2,,Developer,Software Developer,pi ltd
+Marco,Sors,BIGDIVE,31,M,IT,Venezia,2,,Frontend developer,Freelance frontend & dataviz developer,Free Lancer
+Erika,Vicaretti,BIGDIVE,28,F,IT,Torino,2,,designer,Graphic & Information Designer,Bianco Tangerine
+Enrico,Zimuel,BIGDIVE,38,M,IT,Torino,2,,Software Engineer,Senior Software Engineer,Rogue Wave Software
+Rocco,Corriero,BIGDIVE,35,M,IT,Turin,2,,Student,null,null
+Claudio,Bellei,BIGDIVE,34,M,GB,Londra,3,,Postdoc,Data Scientist,Elsevier
+Carlo,Bergoglio,BIGDIVE,28,M,IT,Torino,3,,IT Engineer / DB Administrator / Java Web Developer,IT Engineer - Big Data Specialist,GET Italia
+Luca,Ferreri,BIGDIVE,27,M,IT,Torino,3,,PhD student,Data Scientist,aizoOn
+Matteo,Chinazzi,BIGDIVE,29,M,US,Boston,3,,PhD Student,Associate Research Scientist,Northeastern University
+Meltem,Gürel,BIGDIVE,30,F,GB,Cambridge,3,,IT Director at NGO The Comrads Brussels Belgium,PHD Student,Cancer Research UK Cambridge Institute
+Gordon,Hatusupy,BIGDIVE,30,M,CA,Ottawa,3,,Information Designer,Senior Product Designer (data visualization / ux),Shopify
+Bryan,Iotti,BIGDIVE,27,M,IT,Torino,3,,Intern at the Department of Veterinary Sciences University of Turin,PHD Student,University of Turin
+Marcin,Kaszynski,BIGDIVE,34,M,PL,Varsavia,3,,Software Engineer Team Lead Consultant,Software Engineer,Stealth Robotics Startup
+Vito,Mandorino,BIGDIVE,28,M,FR,Parigi,3,,Postdoc in mathematics,Chief Scientist,Lingua Custodia
+Vahan,Nanumyan,BIGDIVE,24,M,CH,Zurich Area,3,,Student,PhD Candidate,ETH Zurich
+Lorenzo,Napolitano,BIGDIVE,29,M,IT,Pisa,3,,Phd Student,Student,Istituto Superiore Sant'Anna
+Orion,Penner,BIGDIVE,31,M,CH,Geneva Area,3,,Assistant Professor,Postdoctoral Researcher,EPFL
+Pierre,Prinetti,BIGDIVE,29,M,DE,Berlino,3,,Data specialist Regione Valle d'Aosta Wannabe startupper,Software Developer,Campanda
+Carlo,Recchia,BIGDIVE,44,M,IT,Torino,3,,Information Security Specialist,Information Security Specialist,Enel
+Anna,Roginska,BIGDIVE,30,F,CA,Woodbridge,3,,Student,Web & Marketing Specialist,Sparton Rugged Electronics
+Josè Alberto Garcìa,Guijarro,BIGDIVE,28,M,ES,Malaga,4,,UX Specialist,ITRS,Universidad Internacional de La Rioja
+Adam,Klimont,BIGDIVE,25,M,GB,Cambridge,4,,PhD Student,PHD Student,University of Cambridge
+Lorenzo,Malanga,BIGDIVE,22,M,IT,Torino,4,,Student & startup cofounder,Co-founder,mercurios.io
+Andrea,Marchini,BIGDIVE,28,M,IT,Milano,4,,Analytical Consultant,Senior Data Scientist,Pirelli
+Massimo,Menichinelli,BIGDIVE,34,M,ES,Madrid,4,,Doctoral Student / Researcher / Designer / Facilitator,Project Manager,Fab Academy
+Elena,Osti,BIGDIVE,35,F,IT,Vicenza,4,,Web analyst,Web Analyst and Adwords Certificated,Empty
+Gianni Rosa,Gallina,BIGDIVE,30,M,IT,Torino,4,,Senior System Engineer,Senior Software Engineer,deltatre
+Gianluca,Moretto,BIGDIVE,47,M,IT,null,4,,null,Executive Manager,MORETTO ASSOCIATES
+Simone,Basso,BIGDIVE,32,M,IT,Torino,4,,researcher,Research Fellow,Nexa Center for Internet & Society
+Chiara,Barbagianni,BIGDIVE,26,F,GB,null,4,,Part-time lecturer researcher language services specialist,Computational Linguist Language Consultant Lecturer and Researcher,Vodafone
+Roberto,Catini,BIGDIVE,28,M,IT,Lucca,4,,PhD Candidate,Data Scientist,IMT Lucca Institute for Advanced Studies
+Andrea,Corradi,BIGDIVE,40,M,IT,Milano,4,,Electronic engineering,Interaction and information designer,null
+Hai,Dao Thanh,BIGDIVE,28,M,VN,Leeds,4,,PhD student,Optical Network Engineer,University of Leeds
+Isabella,David,BIGDIVE,32,F,IT,Torino,4,,DATA ANALYST-ECONOMETRICIAN,Senior Data Analyst,AXA
+Enrico,Deusebio,BIGDIVE,29,M,IT,Milano,4,,Post-doctoral Researcher (University of Cambridge),Data Scientist,CGnal Spa
+Alfredo,Favenza,BIGDIVE,34,M,IT,Torino,4,,Researcher,R&D Project Manager,Istituto Superiore Mario Boella (ISMB)
+Tobias,Sholl,BIGDIVE,31,M,IT,Torino,4,,Project Manager,Manager Data Analysis,Deloitte
+Giorgio Ettore,Melon,BIGDIVE,27,M,IT,Torino,4,,risk/actuarial consultant,Data Analysis,Cerved Group Spa
+Lionel,Johnnes,BIGDIVE,25,M,US,New York,4,,Unemployed before starting graduate school (previously Marketing Director),Senior Product & Delivery Analyst,McKinsey & Company
+Giuseppe Federico,Gullo,BIGDIVE,24,M,IT,Torino,5,,Mobile application engineer,CEO & Founder,Avada Technologies
+Soren,Heitmann,BIGDIVE,37,M,TR,Istanbul,5,,Economist,Applied research to scale digital financial services for financial inclusion,IFC - International Finance Corporation
+Teresa,Kubacka,BIGDIVE,30,F,CH,Zurich Area,5,,PhD student / Research Assistant,Dr. sc. ETH Zurich,Die Mobiliar
+Giacomo,Leonzi,BIGDIVE,32,M,IT,Torino,5,,Free Lance Maker,Internet of Things/ Physical Computing/ Prototyping,Kiwifarm
+Martin,Muller,BIGDIVE,27,M,CH,Zurich,5,,Scientific Assistant,PHD Student,EPFL
+Adriano,Pagano,BIGDIVE,24,M,CH,Fribourg,5,,Student,Junior Data Scientist,sqooba
+Davide,Passaretti,BIGDIVE,26,M,IT,Scauri,5,,PhD Student in Statistics,"PhD Student in Statistics, Data Scientist"," University of Cassino, Universiteit Leiden "
+Riccardo,Rinaldi,BIGDIVE,29,M,IT,Torino,5,,Data Scientist Junior,PhD,aizoOn Technology Consulting
+Massimo,Santi,BIGDIVE,40,M,IT,Bologna,5,,Consultant on environmental services,Ingegnere specializzato nei Servizi di Igiene Urbana,Università di Bologna
+Luca,Tabone,BIGDIVE,33,M,MT,null,5,,data analist,Frontend Developer,RS2 Software plc
+Valentina,Tortolini,BIGDIVE,40,F,IT,Firenze,5,,researcher,Post Doctoral Fellow,IMT Lucca Institute for Advanced Studies
+Gino,Almondo,BIGDIVE,25,M,SE,Stoccolma,5,,Jobseeker,"Physicist, Data Scientist",MedMod IT Solutions AB
+Antonino,Barbera,BIGDIVE,22,M,CH,Lausanne,5,,Student-Avada founder-ICT support engineer,COO & Founder,Envolvi
+Lorenzo,Argante,BIGDIVE,32,M,IT,Torino,5,,Postdoctoral researcher,Researcher,ISI Foundation
+Andrea,Beccaris,BIGDIVE,28,M,IT,Torino,5,,Software Engineer,Software Engineer,TOP-IX Consortium
+Buri,Sinja,BIGDIVE,28,F,SN,Dakar,5,,Monitoring & Evaluation Consultant,(Data) Operations Analyst at IFC,International Finance Corporation
+Andrea,Flori,BIGDIVE,29,M,IT,Siena,5,,PhD Student,Post Doctoral Fellow,IMT School for Advanced Studies Lucca
+Giuseppe,Di Bernardo,BIGDIVE,33,M,DE,Monaco,5,,Postdoctoral Fellow at Max Planck Institute for Astrophysics,Data Science at Max Planck Computing and Data Facility,Chalmers University of Technology
+Matteo,Giaretti,BIGDIVE,30,M,IT,Torino,5,,reliability engineer,Data Scientist,Intesa Sanpaolo
+Enrico,Ubaldi,BIGDIVE,28,M,IT,Turin,5,,Post-Doc,Statistician and data scientist,null
+Luca,Ruzzola,BIGDIVE,23,M,IT,Torino,5,,Physics Student,Data Scientist,AgileLab
+Maurizio,Mattioli,BIGDIVE,40,M,IT,Milan,5,,IT Solution Architect,null,null
+Ottavia,Prunas,BIGDIVE,24,F,IT,Torino,6,,Student,Student,null
+Igor,Mosyagin,BIGDIVE,30,M,RU,Linkoping,6,,PhD Student,PhD Student,null
+Urszula,Czerwinska,BIGDIVE,26,F,PL,Paris,6,,PhD Candidate,PhD Candidate,null
+Giovanni,Zattera,BIGDIVE,25,M,IT,Torino,6,,Student,Student,null
+Andreas,Masaoutis,BIGDIVE,25,M,GR,Torino,6,,unemployed,unemployed,null
+Julia,Conrad,BIGDIVE,27,F,DE,Dakar,6,,Consultant,Consultant IFC,IFC - International Finance Corporation
+Alberto,Colliva,BIGDIVE,32,M,IT,Torino,6,,PhD Student,PhD Student,null
+Giovanni,Nappi,BIGDIVE,32,M,IT,Torino,6,,Innovation Technology and Research,Innovation Technology and Research,Fondaco SGR
+Cecilia,Panigutti,BIGDIVE,26,F,IT,Torino,6,,Junior Data Scientist,Junior Data Scientist,aizoOn
+Carlo,Fisicaro,BIGDIVE,24,M,IT,Torino,6,,Student,Student,null
+Stefano,Galati,BIGDIVE,34,M,IT,Rivalta di Torino,6,,IT Project Manager / System Admin,IT Project Manager / System Admin,TESI s.p.a
+Giulio Virginio,Clemente,BIGDIVE,25,M,IT,Torino,6,,Student,Student,null
+Parthiban,Srinivasan,BIGDIVE,49,M,IN,Chennai,6,,Startupper,Startupper,Reverse Informatics
+Valeria ,Gelardi,BIGDIVE,28,F,IT,Torino,6,,Junior Data Scientist,Junior Data Scientist,TOP-IX Consortium
+Samuel,Nale,BIGDIVE,24,M,IT,Torino,6,,Student,Student,null
+Alberto ,Zavallone,BIGDIVE,35,M,IT,Torino,6,,Financial Analyst,Financial Analyst,Banca Sella Holding
+Luca,Croin,BIGDIVE,30,M,IT,Salerano Canavese (TO),6,,Post-Doc,Post-Doc,INRiM (Istituto Nazionale di Ricerca Metrologica)
+Linda,Mazzucco,BIGDIVE,29,F,IT,Torino,6,,Social Media Manager,Social Media Manager,null
+Dario,Cardamone,BIGDIVE,26,M,IT,Torino,6,,Student,Student,null
+Fabio ,Rosa,BIGDIVE,46,M,IT,Asti,6,,ICT Consultant,ICT Consultant,MC4 Software
+Flavio,Montagner,BDVIZ,31,M,IT,Torino,7,viz,PhD Student,PhD Student,Politecnico di Torino
+Carlo,Poso,BDVIZ,40,M,IT,Torino,7,viz,UX Technologist,UX Technologist,Changan Automobile European Designing Center s.r.l
+Blazej,Piotrowski,BDVIZ,33,M,PL,Chisinau,7,viz,Business Analyst / UX Designer,Business Analyst / UX Designer,Unilever
+Alessio,Rapini,BDVIZ,32,M,IT,Perugia,7,viz,"UX Designer, UI Developer","UX Designer, UI Developer",Evonove
+Ilias ,Bekkali,BDVIZ,27,M,MA,Torino,7,viz,Studenti,Student,null
+Laura ,Pippinato,BDVIZ,30,F,IT,Torino,7,viz,Designer,Designer,TOP-IX
+Barbara ,Stabellini,BDVIZ,29,F,IT,Torino,7,viz,PhD Student,PhD Student,Politecnico di Torino
+Marta,Bariolo,BDVIZ,32,F,IT,Torino,7,viz,Freelance designer,Freelance designer,null
+Massimo,Santoli,BIGDIVE,34,M,IT,Torino,7,,Software developer,Software developer,TOP-IX
+Marco,Martellacci,BIGDIVE,45,M,IT,Torino,7,,Co-Founder,Co-Founder,Enerbrain
+Stefano,Calderan,BIGDIVE,26,M,IT,Torino,7,,Junior Data Scientist,Junior Data Scientist,Oval money
+Ivan,Nardini,BIGDIVE,26,M,IT,Torino,7,,Data Analyst,Data Analyst,Kantar
+Marco,Sebastianelli ,BIGDIVE,31,M,IT,Torino,7,,Researcher,Researcher,plusvalue
+Luca,Barbati,BIGDIVE,33,M,IT,Zürich,7,,Engineer,Engineer,Fennex
+Gabriele,Pece,BIGDIVE,34,M,IT,Milano,7,,Data Product Developer,Data Product Developer,Pirelli
+Enrico,Lombardo,BIGDIVE,32,M,IT,Torino,7,,JUNIOR BIG DATA ANALYST,JUNIOR BIG DATA ANALYST,Vem Solutions S.r.l.
+Pier Paolo,Grassi,BIGDIVE,42,M,IT,Torino,7,,Software developer,Software developer,Sigint S.r.l.
+Muhammad,Al Readean,BIGDIVE,39,M,SA,Dhahran,7,,Software Project Manager,Software Project Manager,Saudi Aramco
+Omjyoti,Dutta,BIGDIVE,37,M,IN,Palma de Mallorca,7,,Post-doctoral Researcher,Post-doctoral Researcher,ICFO
+Daniele,Morano,BIGDIVE,43,M,IT,Torino,7,,Computer programmer - freelancer,Computer programmer - freelancer,null
+Michele,Morello,BIGDIVE,34,M,IT,Torino,7,,Researcher,Researcher,null
+Marek,Kufel,BIGDIVE,32,M,PL,Wrocław,7,,Business Intelligence Software Developer,Business Intelligence Software Developer,null
+Christian,Torrero,BIGDIVE,39,M,IT,Bra,7,,Data Scientist,Data Scientist,u-hooper
+Elisa,Reale,BIGDIVE,28,F,IT,Torino,7,,PhD fellow,PhD fellow,Università degli Studi di Torino
+Stefano,Menozzi,BIGDIVE,27,M,IT,Correggio,7,,Data Engineer,Data Engineer,WAY S.r.l.

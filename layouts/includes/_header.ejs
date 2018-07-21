@@ -1,0 +1,49 @@
+<head>
+    <title><%- title %></title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="description" content="Bigdive Master Program Visualized">
+    <meta name="keywords" content="big, data, bigdive, javascript, d3, machine learning">
+    <meta name="author" content="Fabio Franchino">
+    <meta name="google" content="notranslate" />
+
+    <meta name="viewport" content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0' />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes" /> 
+    <meta name="apple-mobile-web-app-title" content="Bigdive Viz">
+    <meta name="format-detection" content="telephone=no">
+
+
+    <meta property="og:title" content="Big Dive Visualized">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= seo.url %>">
+    <meta property="og:image" content="<%= seo.url %>/assets/social.png">
+    <meta property="og:site_name" content="Big Dive">
+    <meta property="og:description" content="BIG DIVE is the training program designed to boost the technical skills you need to dive into the Big Data universe">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bigdive_eu">
+    <meta name="twitter:creator" content="@fabiofranchino">
+    <meta name="twitter:url" content="<%= seo.url %>">
+    <meta name="twitter:title" content="Big Dive Visualized">
+    <meta name="twitter:description" content="BIG DIVE is the training program designed to boost the technical skills you need to dive into the Big Data universe">
+    <meta name="twitter:image:src" content="<%= seo.url %>/assets/social.png">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+
+    <% if(!dev){ %>
+        <link rel="stylesheet" type="text/css" href="/app.css">
+    <% }else{ %> 
+        <% css.forEach(d => { %>
+        <link rel="stylesheet" type="text/css" href="<%- d %>">
+        <% }) %>
+    <% } %>
+
+    <meta name="viewport" content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0' />
+</head>
+

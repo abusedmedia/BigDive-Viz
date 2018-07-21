@@ -1,0 +1,19 @@
+<% if(!dev){ %>
+    <script type="text/javascript">window.build = '<%-version%>'</script>
+    <script type="text/javascript" src="/libs.js?v=<%-version%>"></script>
+    <script type="text/javascript" src="/app.js?v=<%-version%>"></script>
+<% }else{ %>
+
+    <% libs.forEach(d => { %>
+    <script type="text/javascript" src="<%- d %>"></script>
+    <% }) %>
+    
+    <% js.forEach(d => { %>
+    <script type="text/javascript" src="<%- d %>"></script>
+    <% }) %>
+
+<% } %>
+
+<% if(!dev){ %>
+<%- include('_ganalytics') %>
+<% } %>

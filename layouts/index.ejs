@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <%- include('includes/_header') %>
+<body>
+
+    <main>
+        <article>
+            <div id="header">
+                <div class="logo">
+                    <img src="assets/logo.png" />
+                    <span>Visualized!</span>
+                </div>
+                <h3 id="subtitle">...</h3>
+            </div>
+
+            <div id="all_divers"><%- include('includes/all-divers.svg') %></div>            
+
+            <div class="divider">
+                <h2>Editions</h2>
+            </div>
+            <div id="edition_labels"></div>
+
+            <div class="divider">
+                <h3>Number of Divers</h3>
+            </div>
+            <svg id="by_divers"></svg>
+
+            <div class="divider">
+                <h3>Countries</h3>
+            </div>
+            <svg id="by_countries"></svg>
+
+            <div class="divider">
+                <h3>Italy vs Abroad</h3>
+            </div>
+            <svg id="by_vs_country"></svg>
+
+            <div class="divider">
+                <h3>Genders</h3>
+            </div>
+            <svg id="by_gender"></svg>
+
+            <div class="divider">
+                <h3>Ages</h3>
+            </div>
+            <svg id="by_age"></svg>
+
+            <div class="description">
+                <p><a href="http://www.bigdive.eu/">BIG DIVE</a> is the training program designed to boost the technical skills you need to dive into the Big Data universe, to extract value… and to create social and economic impact. Discover more at <a href="http://www.bigdive.eu/">bigdive.eu</a>.</p>
+            </div>
+
+            <footer>
+                <p>Design+Development: <a href="http://fabiofranchino.com/">Fabio Franchino</a></p> 
+            </footer>
+            
+        </article>
+    </main>
+
+    <%- include('includes/_footer') %>
+
+
+</body>
+</html>
