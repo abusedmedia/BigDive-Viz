@@ -1,0 +1,169 @@
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: white;
+	font-family: 'Oswald', sans-serif;
+
+	display: flex;
+	justify-content: center;
+
+	font-size: 85%;
+}
+
+
+@media (min-width: 769px) {
+	html, body{
+		font-size: 100%;
+	}
+}
+
+
+#header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 200;
+	padding: 2rem;
+}
+
+.logo{
+	width: 250px;
+	text-align: right;
+
+}
+
+.logo img{
+	width: 100%;
+}
+
+.logo span{
+	color: #555;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	line-height: 0rem;
+}
+
+#subtitle{
+	border-top: 1px solid white;
+	padding-top: 1.5rem;
+	width: 100%;
+}
+
+.description{
+	border-top: 1px solid white;
+	padding: 1rem 3rem;
+	padding-top: 2rem;
+}
+
+.description p{
+	text-transform: none;
+	margin: 0;
+}
+
+svg{
+    width: 100%;
+    overflow: visible;
+}
+
+#all_divers #right, #all_divers #left{
+	cursor: pointer;
+}
+
+main{
+    background-color: #eaeaea;
+	width: 100%;
+}
+
+article{
+    background-color: #eaeaea;
+}
+
+@media (min-width: 769px) {
+	main{
+		width: 80%;
+	}
+}
+@media (min-width: 1081px) {
+	main{
+		width: 60%;
+	}
+}
+
+
+
+
+h1, h2, h3, p{
+	font-weight: 600;
+	color: #555;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 3rem;
+}
+h2{
+	font-size: 2rem;
+}
+
+
+
+#edition_labels{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#edition_labels > div{
+	flex:1;
+	text-align: center;
+	padding: 1rem;
+}
+
+
+.divider{
+	padding-top: 2rem;
+		border-top: 1px solid white;
+
+}
+
+#tooltip{
+	pointer-events: none;
+}
+
+
+footer{
+	padding: 2rem;
+	text-align: center;
+	font-size: .8rem;
+
+	margin-top: 1rem;
+	border-top: 1px solid white;
+}
+footer p{
+	margin: 0;
+	text-transform: capitalize;
+}
+a{
+	color: black;
+}
+a:hover{
+	background-color: black;
+	color: white;
+}
+
+
+
+
+.ax text{
+	font-size: 6px;
+}
+.ax .tick line, .ax path{
+	shape-rendering: crispEdges;
+	stroke: #ccc;
+}
