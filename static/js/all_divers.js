@@ -12,15 +12,15 @@
 
     var svg = d3.select('#all_divers svg').attr('viewBox', `0 0 ${w} ${h}`)
     var dots = svg.append('g')
-    svg.selectAll(`#breads rect`)
-        .attr('opacity', 0.2)
+    svg.selectAll('#breads rect')
+      .attr('opacity', 0.2)
 
     var tool
 
     var pack = d3.pack()
-                    .size([w, h2])
-                    .padding(3)
-                    // .radius(() => Math.random() + 10)
+      .size([w, h2])
+      .padding(3)
+    // .radius(() => Math.random() + 10)
 
     var states = ['intro', 'diver', 'country', 'gender', 'age']
     var indexState = 0
@@ -29,15 +29,15 @@
     function draw () {
       var key = states[indexState]
 
-      var str = d3.hierarchy({root: 'r', children: data})
-                              .sort((a, b) => d3.ascending(a.data[key], b.data[key]))
-                              .sum(d => d.num)
+      var str = d3.hierarchy({ root: 'r', children: data })
+        .sort((a, b) => d3.ascending(a.data[key], b.data[key]))
+        .sum(d => d.num)
 
       var packed = pack(str)
 
       switch (key) {
         case 'intro':
-          scramble(`Explore BigDive through the participants`)
+          scramble('Explore BigDive through the participants')
           break
 
         case 'diver':
@@ -60,17 +60,17 @@
           break
 
         case 'edition':
-          scramble(`edition`)
+          scramble('edition')
           break
       }
 
       circles = dots.selectAll('.elements')
-          .data(packed.children, d => d.data.id)
+        .data(packed.children, d => d.data.id)
 
       var newcircles = circles.enter()
-          .append('g')
-          .classed('elements', true)
-          .attr('transform', `translate(${w / 2}, ${h / 2})`)
+        .append('g')
+        .classed('elements', true)
+        .attr('transform', `translate(${w / 2}, ${h / 2})`)
 
       newcircles.append('circle')
         .attr('r', d => d.r)
@@ -93,8 +93,12 @@
       newcircles.append('image')
         .classed('country', true)
         .attr('xlink:href', d => {
-          var c = getCountryName(d.data.country).toLowerCase().replace(/ /g, '-')
-          return `assets/flag/svg/${c}.svg`
+          var c = iso.countries[d.data.country]
+          var p = ''
+          if (c) {
+            p = c.name.toLowerCase().replace(/ /g, '-')
+          }
+          return `assets/flag/svg/${p}.svg`
         })
         .attr('width', d => d.r * 2)
         .attr('height', d => d.r * 2)
@@ -103,10 +107,10 @@
         .attr('display', 'none')
 
       newcircles.append('circle')
-          .attr('r', d => d.r)
-          .classed('gender', true)
-          .style('fill', d => window.APP.genderPalette[d.data.gender])
-          .attr('display', 'none')
+        .attr('r', d => d.r)
+        .classed('gender', true)
+        .style('fill', d => window.APP.genderPalette[d.data.gender])
+        .attr('display', 'none')
 
       // newcircles.append('circle')
       //   .attr('r', d => d.r)
@@ -128,32 +132,32 @@
         .attr('display', 'none')
 
       circles.merge(newcircles)
-          // .transition()
-          // .duration(100)
-          .attr('transform', d => `translate(${d.x}, ${d.y})`)
-          // .transition()
-          // .duration(750)
-          // .ease(d3.easeExpIn)
-          // .delay((d, i) => i * 1)
-          // .attr('transform', d => `translate(${d.x}, ${d.y})`)
-          // .attr('opacity', 0)
-          // .transition()
-          // .duration(750)
-          // .ease(d3.easeExpOut)
-          // .attr('opacity', 1)
-          // .style('fill', d => {
-          //   var c = '#ccc'
-          //   if (states[indexState] == 'country') {
-          //     c = countryColor(d.data.country)
-          //   }
-          //   if (states[indexState] == 'gender') {
-          //     c = genderColor(d.data.gender)
-          //   }
-          //   if (states[indexState] == 'edition') {
-          //     c = editionColor(d.data.edition)
-          //   }
-          //   return c
-          // })
+      // .transition()
+      // .duration(100)
+        .attr('transform', d => `translate(${d.x}, ${d.y})`)
+      // .transition()
+      // .duration(750)
+      // .ease(d3.easeExpIn)
+      // .delay((d, i) => i * 1)
+      // .attr('transform', d => `translate(${d.x}, ${d.y})`)
+      // .attr('opacity', 0)
+      // .transition()
+      // .duration(750)
+      // .ease(d3.easeExpOut)
+      // .attr('opacity', 1)
+      // .style('fill', d => {
+      //   var c = '#ccc'
+      //   if (states[indexState] == 'country') {
+      //     c = countryColor(d.data.country)
+      //   }
+      //   if (states[indexState] == 'gender') {
+      //     c = genderColor(d.data.gender)
+      //   }
+      //   if (states[indexState] == 'edition') {
+      //     c = editionColor(d.data.edition)
+      //   }
+      //   return c
+      // })
 
       if (prevState) {
         circles.merge(newcircles).selectAll('.' + prevState)
@@ -197,12 +201,12 @@
           // .ease(d3.easeExpInOut)
           // .duration(350)
           // .attr('transform', `translate(${d.x}, ${d.y - 35})`)
-            // this.select(d.data.country)
+        // this.select(d.data.country)
       })
-      .on('mouseleave', (d) => {
-        tool.attr('opacity', 0)
+        .on('mouseleave', (d) => {
+          tool.attr('opacity', 0)
         // this.deselect()
-      })
+        })
     }
 
     draw()
@@ -227,7 +231,7 @@
           c = 'black'// cols(id)
         }
         d3.select(this)
-            .style('fill', c)
+          .style('fill', c)
       })
     }
 
@@ -236,7 +240,7 @@
     }
 
     function scramble (str) {
-      TweenMax.to('#subtitle', 1, {scrambleText: {text: str, chars: '1234567890', speed: 0.5}, delay: 0.75, ease: Linear.easeNone})
+      TweenMax.to('#subtitle', 1, { scrambleText: { text: str, chars: '1234567890', speed: 0.5 }, delay: 0.75, ease: Linear.easeNone })
     }
 
     function createToolTip () {

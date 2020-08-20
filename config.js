@@ -12,12 +12,12 @@ module.exports = function () {
     libs: [
       '/node_modules/jquery/dist/jquery.min.js',
       '/node_modules/d3/dist/d3.min.js',
-      '/libs/gsap/src/minified/TweenMax.min.js',
-      '/libs/gsap/src/minified/plugins/ScrambleTextPlugin.min.js',
-      '/node_modules/slugify/index.js'
+      '/libs/gsap/gsap.min.js',
+      '/libs/gsap/ScrambleTextPlugin.min.js',
+      '/node_modules/slugify/index.js',
+      '/node_modules/iso-countries/dist/countries.min.js'
     ],
     js: [
-      '/libs/isoCountries.js',
       '/js/app.js',
       '/js/all_divers.js',
       '/js/edition_labels.js',

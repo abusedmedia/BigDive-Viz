@@ -1,7 +1,6 @@
 node_modules
 static/screens
 public/
-libs
 .grunt
 app/CNAME
 dev/
