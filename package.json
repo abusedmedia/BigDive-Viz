@@ -34,7 +34,7 @@
     "metalsmith-postcss": "^4.2.0",
     "metalsmith-uglify": "^2.3.0",
     "pixrem": "^4.0.1",
-    "postcss": "^7.0.0"
+    "postcss": "^8.2.10"
   },
   "devDependencies": {
     "grunt": "^1.0.2",
